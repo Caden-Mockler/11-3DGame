@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/knife_smooth.obj-bb245de8fcd55eb7379bd5a87d6f0ea4.mesh"
+
+[deps]
+
+files=[ "res://.import/knife_smooth.obj-bb245de8fcd55eb7379bd5a87d6f0ea4.mesh" ]
+
+source_file="res://Assets/Kenney/knife_smooth.obj"
+dest_files=[ "res://.import/knife_smooth.obj-bb245de8fcd55eb7379bd5a87d6f0ea4.mesh", "res://.import/knife_smooth.obj-bb245de8fcd55eb7379bd5a87d6f0ea4.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

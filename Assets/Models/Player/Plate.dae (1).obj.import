@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Plate.dae (1).obj-cd30e32ed51f3840560e8d690cdbcd2b.mesh"
+
+[deps]
+
+files=[ "res://.import/Plate.dae (1).obj-cd30e32ed51f3840560e8d690cdbcd2b.mesh" ]
+
+source_file="res://Assets/Models/Player/Plate.dae (1).obj"
+dest_files=[ "res://.import/Plate.dae (1).obj-cd30e32ed51f3840560e8d690cdbcd2b.mesh", "res://.import/Plate.dae (1).obj-cd30e32ed51f3840560e8d690cdbcd2b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

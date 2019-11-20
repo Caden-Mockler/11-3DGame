@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/uziLongSilencer.obj-5f03f4cd2a548272f8d8dac3a5a643d1.mesh"
+
+[deps]
+
+files=[ "res://.import/uziLongSilencer.obj-5f03f4cd2a548272f8d8dac3a5a643d1.mesh" ]
+
+source_file="res://Assets/Kenney/uziLongSilencer.obj"
+dest_files=[ "res://.import/uziLongSilencer.obj-5f03f4cd2a548272f8d8dac3a5a643d1.mesh", "res://.import/uziLongSilencer.obj-5f03f4cd2a548272f8d8dac3a5a643d1.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

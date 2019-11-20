@@ -40,6 +40,7 @@ func _physics_process(delta):
 	
 	velocity.x = desired_velocity.x
 	velocity.z = desired_velocity.z
+# warning-ignore:standalone_expression
 	velocity - move_and_slide(velocity, Vector3.UP, true)
 	if jump and is_on_floor():
 		velocity.y = jump_speed

@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/ammo_uzi.obj-f72d81054ff017864ae93554bacc8d05.mesh"
+
+[deps]
+
+files=[ "res://.import/ammo_uzi.obj-f72d81054ff017864ae93554bacc8d05.mesh" ]
+
+source_file="res://Assets/Kenney/ammo_uzi.obj"
+dest_files=[ "res://.import/ammo_uzi.obj-f72d81054ff017864ae93554bacc8d05.mesh", "res://.import/ammo_uzi.obj-f72d81054ff017864ae93554bacc8d05.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

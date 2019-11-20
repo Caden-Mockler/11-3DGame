@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/shotgunShort.obj-c3ea3367ca469d39478c40998745e3f1.mesh"
+
+[deps]
+
+files=[ "res://.import/shotgunShort.obj-c3ea3367ca469d39478c40998745e3f1.mesh" ]
+
+source_file="res://Assets/Kenney/shotgunShort.obj"
+dest_files=[ "res://.import/shotgunShort.obj-c3ea3367ca469d39478c40998745e3f1.mesh", "res://.import/shotgunShort.obj-c3ea3367ca469d39478c40998745e3f1.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

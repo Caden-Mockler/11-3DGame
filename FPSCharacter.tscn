@@ -1,13 +1,35 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://FPSCharacter.gd" type="Script" id=1]
-[ext_resource path="res://Assets/Models/shotgun.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://Assets/Models/Player/Sword.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://Assets/Models/Player/LInkedInked7b314ccbba528a0fc578be5f815b518a_LI.jpg" type="Texture" id=3]
+[ext_resource path="res://Assets/Models/Player/Plate.dae (1).obj" type="ArrayMesh" id=4]
+[ext_resource path="res://Assets/Models/Player/DefaultMaterial_albedo.jpg" type="Texture" id=5]
 
 [sub_resource type="CapsuleShape" id=1]
 radius = 0.5
 
 [sub_resource type="BoxShape" id=2]
 extents = Vector3( 0.4, 0.1, 0.4 )
+
+[sub_resource type="CapsuleMesh" id=3]
+radius = 0.5
+
+[sub_resource type="SphereShape" id=4]
+radius = 0.5
+
+[sub_resource type="SphereMesh" id=5]
+radius = 0.5
+height = 1.0
+
+[sub_resource type="SpatialMaterial" id=6]
+albedo_color = Color( 0.14902, 0.803922, 0.282353, 1 )
+
+[sub_resource type="SpatialMaterial" id=7]
+albedo_texture = ExtResource( 3 )
+
+[sub_resource type="SpatialMaterial" id=8]
+albedo_texture = ExtResource( 5 )
 
 [node name="FPSCharacter" type="KinematicBody"]
 script = ExtResource( 1 )
@@ -24,41 +46,31 @@ shape = SubResource( 2 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.795875, 0 )
 
 [node name="Camera" type="Camera" parent="Pivot"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0295973, -0.0301442 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.686302, -0.229849 )
 
 [node name="MeshInstance" type="MeshInstance" parent="Pivot"]
 transform = Transform( -8.91245, 0, -1.25227, 0, 9, 0, 1.25227, 0, -8.91245, 0.215485, -0.187666, -0.488448 )
-mesh = ExtResource( 2 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-008, -1, 0, 1, -4.37114e-008, 0, 0, 0 )
+mesh = SubResource( 3 )
 material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-material/5 = null
-material/6 = null
-material/7 = null
-material/8 = null
-material/9 = null
-material/10 = null
-material/11 = null
-material/12 = null
-material/13 = null
-material/14 = null
-material/15 = null
-material/16 = null
-material/17 = null
-material/18 = null
-material/19 = null
-material/20 = null
-material/21 = null
-material/22 = null
-material/23 = null
-material/24 = null
-material/25 = null
-material/26 = null
-material/27 = null
-material/28 = null
-material/29 = null
-material/30 = null
-material/31 = null
-material/32 = null
+
+[node name="Head" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4058, 0 )
+shape = SubResource( 4 )
+
+[node name="MeshInstance" type="MeshInstance" parent="Head"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-008, -1, 0, 1, -4.37114e-008, 0, -0.00122428, 0 )
+mesh = SubResource( 5 )
+material/0 = SubResource( 6 )
+
+[node name="Sword" type="MeshInstance" parent="."]
+transform = Transform( 0.280494, 0, -0.959856, -0.286526, 0.954407, -0.0837301, 0.916093, 0.29851, 0.267705, 0.667408, 0.694663, -1.0951 )
+mesh = ExtResource( 2 )
+material/0 = SubResource( 7 )
+
+[node name="Plate" type="MeshInstance" parent="."]
+transform = Transform( 0.719594, 0.209806, -0.0258216, 0, -0.0916142, -0.744384, -0.211389, 0.714205, -0.0879, -0.898551, 0.675137, -0.991875 )
+mesh = ExtResource( 4 )
+material/0 = SubResource( 8 )

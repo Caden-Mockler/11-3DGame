@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/knifeRound_sharp.obj-4bb7bc7bb6475fb558993b21e51c21d2.mesh"
+
+[deps]
+
+files=[ "res://.import/knifeRound_sharp.obj-4bb7bc7bb6475fb558993b21e51c21d2.mesh" ]
+
+source_file="res://Assets/Kenney/knifeRound_sharp.obj"
+dest_files=[ "res://.import/knifeRound_sharp.obj-4bb7bc7bb6475fb558993b21e51c21d2.mesh", "res://.import/knifeRound_sharp.obj-4bb7bc7bb6475fb558993b21e51c21d2.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

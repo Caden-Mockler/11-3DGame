@@ -1,0 +1,16 @@
+# Blender MTL File: 'Sword.blend'
+# Material Count: 1
+
+newmtl Wooden_Sword_mat
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.0 0.0 0.0
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump Texture\\SwordTexture_Wooden_Sword_mat_Normal.png
+map_Kd Texture\\SwordTexture_Wooden_Sword_mat_BaseColor.png
+map_Ns Texture\\SwordTexture_Wooden_Sword_mat_Roughness.png
+refl Texture\\SwordTexture_Wooden_Sword_mat_Metallic.png
