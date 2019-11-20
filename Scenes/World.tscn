@@ -1,0 +1,67 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Scenes/World.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Crate.tscn" type="PackedScene" id=2]
+[ext_resource path="res://FPSCharacter.tscn" type="PackedScene" id=3]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 0.286275, 0.313726, 0.341176, 1 )
+
+[sub_resource type="PlaneMesh" id=2]
+material = SubResource( 1 )
+size = Vector2( 20, 20 )
+
+[sub_resource type="ConvexPolygonShape" id=3]
+points = PoolVector3Array( 10, 0, 10, -10, 0, 10, 10, 0, -10, -10, 0, -10 )
+
+[sub_resource type="BoxShape" id=4]
+extents = Vector3( 0.500123, 1, 3.99819 )
+
+[sub_resource type="SpatialMaterial" id=5]
+
+[sub_resource type="CubeMesh" id=6]
+material = SubResource( 5 )
+size = Vector3( 1, 2, 8 )
+
+[node name="World" type="Spatial"]
+script = ExtResource( 1 )
+
+[node name="Ground" type="StaticBody" parent="."]
+
+[node name="MeshInstance" type="MeshInstance" parent="Ground"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0.0944796, 0.0631865, 0.0122795 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Ground"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0 )
+shape = SubResource( 3 )
+
+[node name="Crate" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.67044, 1.37587, -2.57926 )
+
+[node name="Crate2" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.54735, 2.63189, 0.0999665 )
+
+[node name="Crate3" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.56277, 0.647794, 0.439583 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 0.88384, 0.268747, 0.382887, -0.451265, 0.705463, 0.546519, -0.123237, -0.655818, 0.744792, 12.9793, 9.61816, 22.749 )
+shadow_enabled = true
+shadow_color = Color( 0.129412, 0.145098, 0.160784, 1 )
+
+[node name="FPSCharacter" parent="." instance=ExtResource( 3 )]
+transform = Transform( 0.744997, 0, 0.667067, 0, 1, 0, -0.667067, 0, 0.744997, 10.7565, 2.70554, 14.7062 )
+
+[node name="StaticBody" type="StaticBody" parent="."]
+transform = Transform( 2, 0, 0, 0, 1, 0, 0, 0, 1, -0.1631, 1.09381, 10.9326 )
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.46034, 0, 0 )
+shape = SubResource( 4 )
+
+[node name="MeshInstance" type="MeshInstance" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.46397, 0, 0 )
+mesh = SubResource( 6 )
+material/0 = null
