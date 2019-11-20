@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/towerSquarePoles.obj-ad7ad528ed4c7f47bf4d320ec2c0f569.mesh"
+
+[deps]
+
+files=[ "res://.import/towerSquarePoles.obj-ad7ad528ed4c7f47bf4d320ec2c0f569.mesh" ]
+
+source_file="res://Assets/Models/Village/Castle/Models/towerSquarePoles.obj"
+dest_files=[ "res://.import/towerSquarePoles.obj-ad7ad528ed4c7f47bf4d320ec2c0f569.mesh", "res://.import/towerSquarePoles.obj-ad7ad528ed4c7f47bf4d320ec2c0f569.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/wallWoodWindowShutters.obj-48da430daabd30edb7b0cd439adbfafe.mesh"
+
+[deps]
+
+files=[ "res://.import/wallWoodWindowShutters.obj-48da430daabd30edb7b0cd439adbfafe.mesh" ]
+
+source_file="res://Assets/Models/Village/Fantasy+/wallWoodWindowShutters.obj"
+dest_files=[ "res://.import/wallWoodWindowShutters.obj-48da430daabd30edb7b0cd439adbfafe.mesh", "res://.import/wallWoodWindowShutters.obj-48da430daabd30edb7b0cd439adbfafe.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

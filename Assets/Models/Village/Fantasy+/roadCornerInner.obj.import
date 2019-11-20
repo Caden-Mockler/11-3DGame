@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/roadCornerInner.obj-1c2b12501255e86ff0d4659d31b270dc.mesh"
+
+[deps]
+
+files=[ "res://.import/roadCornerInner.obj-1c2b12501255e86ff0d4659d31b270dc.mesh" ]
+
+source_file="res://Assets/Models/Village/Fantasy+/roadCornerInner.obj"
+dest_files=[ "res://.import/roadCornerInner.obj-1c2b12501255e86ff0d4659d31b270dc.mesh", "res://.import/roadCornerInner.obj-1c2b12501255e86ff0d4659d31b270dc.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

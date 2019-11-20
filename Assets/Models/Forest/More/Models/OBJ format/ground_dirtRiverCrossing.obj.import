@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/ground_dirtRiverCrossing.obj-9389be8dfb068a7691bdff818abc7964.mesh"
+
+[deps]
+
+files=[ "res://.import/ground_dirtRiverCrossing.obj-9389be8dfb068a7691bdff818abc7964.mesh" ]
+
+source_file="res://Assets/Models/Forest/More/Models/OBJ format/ground_dirtRiverCrossing.obj"
+dest_files=[ "res://.import/ground_dirtRiverCrossing.obj-9389be8dfb068a7691bdff818abc7964.mesh", "res://.import/ground_dirtRiverCrossing.obj-9389be8dfb068a7691bdff818abc7964.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/overhang.obj-fba93b63c88b3c0b3020223b4170e9c4.mesh"
+
+[deps]
+
+files=[ "res://.import/overhang.obj-fba93b63c88b3c0b3020223b4170e9c4.mesh" ]
+
+source_file="res://Assets/Models/Village/Fantasy+/overhang.obj"
+dest_files=[ "res://.import/overhang.obj-fba93b63c88b3c0b3020223b4170e9c4.mesh", "res://.import/overhang.obj-fba93b63c88b3c0b3020223b4170e9c4.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

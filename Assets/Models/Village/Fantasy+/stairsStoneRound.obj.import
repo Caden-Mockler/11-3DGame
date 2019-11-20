@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/stairsStoneRound.obj-63870173e9d96929cc2d7a09c1cb5f05.mesh"
+
+[deps]
+
+files=[ "res://.import/stairsStoneRound.obj-63870173e9d96929cc2d7a09c1cb5f05.mesh" ]
+
+source_file="res://Assets/Models/Village/Fantasy+/stairsStoneRound.obj"
+dest_files=[ "res://.import/stairsStoneRound.obj-63870173e9d96929cc2d7a09c1cb5f05.mesh", "res://.import/stairsStoneRound.obj-63870173e9d96929cc2d7a09c1cb5f05.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

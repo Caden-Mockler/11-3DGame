@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/cliffGrey_block.obj-d7d173de1df00f673824a5753e353381.mesh"
+
+[deps]
+
+files=[ "res://.import/cliffGrey_block.obj-d7d173de1df00f673824a5753e353381.mesh" ]
+
+source_file="res://Assets/Models/Forest/More/Models/OBJ format/cliffGrey_block.obj"
+dest_files=[ "res://.import/cliffGrey_block.obj-d7d173de1df00f673824a5753e353381.mesh", "res://.import/cliffGrey_block.obj-d7d173de1df00f673824a5753e353381.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

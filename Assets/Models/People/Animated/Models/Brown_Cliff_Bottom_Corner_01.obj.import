@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Brown_Cliff_Bottom_Corner_01.obj-69b563462043d7c29e685017971a8e05.mesh"
+
+[deps]
+
+files=[ "res://.import/Brown_Cliff_Bottom_Corner_01.obj-69b563462043d7c29e685017971a8e05.mesh" ]
+
+source_file="res://Assets/Models/People/Animated/Models/Brown_Cliff_Bottom_Corner_01.obj"
+dest_files=[ "res://.import/Brown_Cliff_Bottom_Corner_01.obj-69b563462043d7c29e685017971a8e05.mesh", "res://.import/Brown_Cliff_Bottom_Corner_01.obj-69b563462043d7c29e685017971a8e05.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

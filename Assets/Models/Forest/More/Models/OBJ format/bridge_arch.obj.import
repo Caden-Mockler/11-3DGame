@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/bridge_arch.obj-80c43d342a0873010dddcb067abb9070.mesh"
+
+[deps]
+
+files=[ "res://.import/bridge_arch.obj-80c43d342a0873010dddcb067abb9070.mesh" ]
+
+source_file="res://Assets/Models/Forest/More/Models/OBJ format/bridge_arch.obj"
+dest_files=[ "res://.import/bridge_arch.obj-80c43d342a0873010dddcb067abb9070.mesh", "res://.import/bridge_arch.obj-80c43d342a0873010dddcb067abb9070.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

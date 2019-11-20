@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/fountainCurved.obj-8a0cf28eea9e3b74418c11b6e36a4597.mesh"
+
+[deps]
+
+files=[ "res://.import/fountainCurved.obj-8a0cf28eea9e3b74418c11b6e36a4597.mesh" ]
+
+source_file="res://Assets/Models/Village/Fantasy+/fountainCurved.obj"
+dest_files=[ "res://.import/fountainCurved.obj-8a0cf28eea9e3b74418c11b6e36a4597.mesh", "res://.import/fountainCurved.obj-8a0cf28eea9e3b74418c11b6e36a4597.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

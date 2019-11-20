@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/tent_detailedOpen.obj-7b96b09118353bc8725ad074c13a1b0f.mesh"
+
+[deps]
+
+files=[ "res://.import/tent_detailedOpen.obj-7b96b09118353bc8725ad074c13a1b0f.mesh" ]
+
+source_file="res://Assets/Models/Forest/More/Models/OBJ format/tent_detailedOpen.obj"
+dest_files=[ "res://.import/tent_detailedOpen.obj-7b96b09118353bc8725ad074c13a1b0f.mesh", "res://.import/tent_detailedOpen.obj-7b96b09118353bc8725ad074c13a1b0f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

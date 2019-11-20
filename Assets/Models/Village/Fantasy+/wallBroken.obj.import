@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/wallBroken.obj-fb343810b7c4b1f51f5bb7e478a755fe.mesh"
+
+[deps]
+
+files=[ "res://.import/wallBroken.obj-fb343810b7c4b1f51f5bb7e478a755fe.mesh" ]
+
+source_file="res://Assets/Models/Village/Fantasy+/wallBroken.obj"
+dest_files=[ "res://.import/wallBroken.obj-fb343810b7c4b1f51f5bb7e478a755fe.mesh", "res://.import/wallBroken.obj-fb343810b7c4b1f51f5bb7e478a755fe.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

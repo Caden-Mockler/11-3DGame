@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/road.obj-b1ce6d31f10f5ed6b20aabd9203a77d6.mesh"
+
+[deps]
+
+files=[ "res://.import/road.obj-b1ce6d31f10f5ed6b20aabd9203a77d6.mesh" ]
+
+source_file="res://Assets/Models/Village/Fantasy+/road.obj"
+dest_files=[ "res://.import/road.obj-b1ce6d31f10f5ed6b20aabd9203a77d6.mesh", "res://.import/road.obj-b1ce6d31f10f5ed6b20aabd9203a77d6.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

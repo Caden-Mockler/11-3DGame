@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/planksHalf.obj-ce2df392fa5d5940c3657c7e911eac52.mesh"
+
+[deps]
+
+files=[ "res://.import/planksHalf.obj-ce2df392fa5d5940c3657c7e911eac52.mesh" ]
+
+source_file="res://Assets/Models/Village/Fantasy+/planksHalf.obj"
+dest_files=[ "res://.import/planksHalf.obj-ce2df392fa5d5940c3657c7e911eac52.mesh", "res://.import/planksHalf.obj-ce2df392fa5d5940c3657c7e911eac52.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

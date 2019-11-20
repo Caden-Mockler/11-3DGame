@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Wood_Fence_01.obj-dd8faec26cc43c7a6bfb445075dc3b08.mesh"
+
+[deps]
+
+files=[ "res://.import/Wood_Fence_01.obj-dd8faec26cc43c7a6bfb445075dc3b08.mesh" ]
+
+source_file="res://Assets/Models/Forest/Models/Wood_Fence_01.obj"
+dest_files=[ "res://.import/Wood_Fence_01.obj-dd8faec26cc43c7a6bfb445075dc3b08.mesh", "res://.import/Wood_Fence_01.obj-dd8faec26cc43c7a6bfb445075dc3b08.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

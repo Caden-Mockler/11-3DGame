@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Grey_Cliff_Top_Corner_01.obj-b508b944d6da1a85385665ba292f5a2f.mesh"
+
+[deps]
+
+files=[ "res://.import/Grey_Cliff_Top_Corner_01.obj-b508b944d6da1a85385665ba292f5a2f.mesh" ]
+
+source_file="res://Assets/Models/Forest/Models/Grey_Cliff_Top_Corner_01.obj"
+dest_files=[ "res://.import/Grey_Cliff_Top_Corner_01.obj-b508b944d6da1a85385665ba292f5a2f.mesh", "res://.import/Grey_Cliff_Top_Corner_01.obj-b508b944d6da1a85385665ba292f5a2f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

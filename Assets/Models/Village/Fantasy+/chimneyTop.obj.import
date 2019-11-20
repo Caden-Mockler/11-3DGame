@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/chimneyTop.obj-74c4f4a83b27ed26804d793d5911f6d8.mesh"
+
+[deps]
+
+files=[ "res://.import/chimneyTop.obj-74c4f4a83b27ed26804d793d5911f6d8.mesh" ]
+
+source_file="res://Assets/Models/Village/Fantasy+/chimneyTop.obj"
+dest_files=[ "res://.import/chimneyTop.obj-74c4f4a83b27ed26804d793d5911f6d8.mesh", "res://.import/chimneyTop.obj-74c4f4a83b27ed26804d793d5911f6d8.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

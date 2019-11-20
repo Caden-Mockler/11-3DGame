@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/treeHighRound.obj-70919fac4733a5111a0246bc16578ced.mesh"
+
+[deps]
+
+files=[ "res://.import/treeHighRound.obj-70919fac4733a5111a0246bc16578ced.mesh" ]
+
+source_file="res://Assets/Models/Village/Fantasy+/treeHighRound.obj"
+dest_files=[ "res://.import/treeHighRound.obj-70919fac4733a5111a0246bc16578ced.mesh", "res://.import/treeHighRound.obj-70919fac4733a5111a0246bc16578ced.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

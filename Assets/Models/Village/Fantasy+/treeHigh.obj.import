@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/treeHigh.obj-2a93f80ffeaba731c483bb4986405179.mesh"
+
+[deps]
+
+files=[ "res://.import/treeHigh.obj-2a93f80ffeaba731c483bb4986405179.mesh" ]
+
+source_file="res://Assets/Models/Village/Fantasy+/treeHigh.obj"
+dest_files=[ "res://.import/treeHigh.obj-2a93f80ffeaba731c483bb4986405179.mesh", "res://.import/treeHigh.obj-2a93f80ffeaba731c483bb4986405179.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

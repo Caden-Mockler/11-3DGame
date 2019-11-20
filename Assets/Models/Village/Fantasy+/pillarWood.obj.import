@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/pillarWood.obj-27336d1c1b976fa9ae1e89349623b1ea.mesh"
+
+[deps]
+
+files=[ "res://.import/pillarWood.obj-27336d1c1b976fa9ae1e89349623b1ea.mesh" ]
+
+source_file="res://Assets/Models/Village/Fantasy+/pillarWood.obj"
+dest_files=[ "res://.import/pillarWood.obj-27336d1c1b976fa9ae1e89349623b1ea.mesh", "res://.import/pillarWood.obj-27336d1c1b976fa9ae1e89349623b1ea.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

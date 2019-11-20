@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/cliffGrey_cornerInnerMid.obj-5830c141725065a38d2221d02b0a8b87.mesh"
+
+[deps]
+
+files=[ "res://.import/cliffGrey_cornerInnerMid.obj-5830c141725065a38d2221d02b0a8b87.mesh" ]
+
+source_file="res://Assets/Models/Forest/More/Models/OBJ format/cliffGrey_cornerInnerMid.obj"
+dest_files=[ "res://.import/cliffGrey_cornerInnerMid.obj-5830c141725065a38d2221d02b0a8b87.mesh", "res://.import/cliffGrey_cornerInnerMid.obj-5830c141725065a38d2221d02b0a8b87.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

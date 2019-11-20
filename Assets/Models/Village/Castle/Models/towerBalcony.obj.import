@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/towerBalcony.obj-efd71b40a5f70c0cc4f15edb40b46785.mesh"
+
+[deps]
+
+files=[ "res://.import/towerBalcony.obj-efd71b40a5f70c0cc4f15edb40b46785.mesh" ]
+
+source_file="res://Assets/Models/Village/Castle/Models/towerBalcony.obj"
+dest_files=[ "res://.import/towerBalcony.obj-efd71b40a5f70c0cc4f15edb40b46785.mesh", "res://.import/towerBalcony.obj-efd71b40a5f70c0cc4f15edb40b46785.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Plate_Grass_Dirt_01.obj-533746248d6d432963e55d0d451cfaa5.mesh"
+
+[deps]
+
+files=[ "res://.import/Plate_Grass_Dirt_01.obj-533746248d6d432963e55d0d451cfaa5.mesh" ]
+
+source_file="res://Assets/Models/People/Animated/Models/Plate_Grass_Dirt_01.obj"
+dest_files=[ "res://.import/Plate_Grass_Dirt_01.obj-533746248d6d432963e55d0d451cfaa5.mesh", "res://.import/Plate_Grass_Dirt_01.obj-533746248d6d432963e55d0d451cfaa5.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

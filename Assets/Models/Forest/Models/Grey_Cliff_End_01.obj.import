@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Grey_Cliff_End_01.obj-91bffe5fbb340861b283ccbdb892114c.mesh"
+
+[deps]
+
+files=[ "res://.import/Grey_Cliff_End_01.obj-91bffe5fbb340861b283ccbdb892114c.mesh" ]
+
+source_file="res://Assets/Models/Forest/Models/Grey_Cliff_End_01.obj"
+dest_files=[ "res://.import/Grey_Cliff_End_01.obj-91bffe5fbb340861b283ccbdb892114c.mesh", "res://.import/Grey_Cliff_End_01.obj-91bffe5fbb340861b283ccbdb892114c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

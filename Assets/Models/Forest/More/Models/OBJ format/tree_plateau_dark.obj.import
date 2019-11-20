@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/tree_plateau_dark.obj-12d115f98bd1bb28c317f0d5048742af.mesh"
+
+[deps]
+
+files=[ "res://.import/tree_plateau_dark.obj-12d115f98bd1bb28c317f0d5048742af.mesh" ]
+
+source_file="res://Assets/Models/Forest/More/Models/OBJ format/tree_plateau_dark.obj"
+dest_files=[ "res://.import/tree_plateau_dark.obj-12d115f98bd1bb28c317f0d5048742af.mesh", "res://.import/tree_plateau_dark.obj-12d115f98bd1bb28c317f0d5048742af.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

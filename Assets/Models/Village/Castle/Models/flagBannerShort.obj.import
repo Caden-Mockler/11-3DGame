@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/flagBannerShort.obj-729bd31ae914aee7704f7076d01c0ad6.mesh"
+
+[deps]
+
+files=[ "res://.import/flagBannerShort.obj-729bd31ae914aee7704f7076d01c0ad6.mesh" ]
+
+source_file="res://Assets/Models/Village/Castle/Models/flagBannerShort.obj"
+dest_files=[ "res://.import/flagBannerShort.obj-729bd31ae914aee7704f7076d01c0ad6.mesh", "res://.import/flagBannerShort.obj-729bd31ae914aee7704f7076d01c0ad6.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

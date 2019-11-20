@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/rockLarge.obj-398b418c13a9fc372e46cc38f3e3fea6.mesh"
+
+[deps]
+
+files=[ "res://.import/rockLarge.obj-398b418c13a9fc372e46cc38f3e3fea6.mesh" ]
+
+source_file="res://Assets/Models/Village/Fantasy+/rockLarge.obj"
+dest_files=[ "res://.import/rockLarge.obj-398b418c13a9fc372e46cc38f3e3fea6.mesh", "res://.import/rockLarge.obj-398b418c13a9fc372e46cc38f3e3fea6.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

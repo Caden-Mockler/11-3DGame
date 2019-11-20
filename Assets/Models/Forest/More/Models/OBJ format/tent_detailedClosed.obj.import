@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/tent_detailedClosed.obj-3446aa1c4c3b31d972199d73a8faa639.mesh"
+
+[deps]
+
+files=[ "res://.import/tent_detailedClosed.obj-3446aa1c4c3b31d972199d73a8faa639.mesh" ]
+
+source_file="res://Assets/Models/Forest/More/Models/OBJ format/tent_detailedClosed.obj"
+dest_files=[ "res://.import/tent_detailedClosed.obj-3446aa1c4c3b31d972199d73a8faa639.mesh", "res://.import/tent_detailedClosed.obj-3446aa1c4c3b31d972199d73a8faa639.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

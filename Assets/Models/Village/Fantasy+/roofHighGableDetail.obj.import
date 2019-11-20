@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/roofHighGableDetail.obj-cc8aa3bbc4ccf1e837fc95546cfa71a3.mesh"
+
+[deps]
+
+files=[ "res://.import/roofHighGableDetail.obj-cc8aa3bbc4ccf1e837fc95546cfa71a3.mesh" ]
+
+source_file="res://Assets/Models/Village/Fantasy+/roofHighGableDetail.obj"
+dest_files=[ "res://.import/roofHighGableDetail.obj-cc8aa3bbc4ccf1e837fc95546cfa71a3.mesh", "res://.import/roofHighGableDetail.obj-cc8aa3bbc4ccf1e837fc95546cfa71a3.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

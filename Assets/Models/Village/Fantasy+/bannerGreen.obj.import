@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/bannerGreen.obj-4e4f1d3bb3fb444af59e36def8fa7993.mesh"
+
+[deps]
+
+files=[ "res://.import/bannerGreen.obj-4e4f1d3bb3fb444af59e36def8fa7993.mesh" ]
+
+source_file="res://Assets/Models/Village/Fantasy+/bannerGreen.obj"
+dest_files=[ "res://.import/bannerGreen.obj-4e4f1d3bb3fb444af59e36def8fa7993.mesh", "res://.import/bannerGreen.obj-4e4f1d3bb3fb444af59e36def8fa7993.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

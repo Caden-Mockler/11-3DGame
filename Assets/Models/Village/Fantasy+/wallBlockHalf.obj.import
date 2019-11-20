@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/wallBlockHalf.obj-c793e8d8575d129fd2a8eab7994504c5.mesh"
+
+[deps]
+
+files=[ "res://.import/wallBlockHalf.obj-c793e8d8575d129fd2a8eab7994504c5.mesh" ]
+
+source_file="res://Assets/Models/Village/Fantasy+/wallBlockHalf.obj"
+dest_files=[ "res://.import/wallBlockHalf.obj-c793e8d8575d129fd2a8eab7994504c5.mesh", "res://.import/wallBlockHalf.obj-c793e8d8575d129fd2a8eab7994504c5.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

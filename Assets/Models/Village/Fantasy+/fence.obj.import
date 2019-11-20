@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/fence.obj-92f98416fa0b8520f858ced2c3508c5d.mesh"
+
+[deps]
+
+files=[ "res://.import/fence.obj-92f98416fa0b8520f858ced2c3508c5d.mesh" ]
+
+source_file="res://Assets/Models/Village/Fantasy+/fence.obj"
+dest_files=[ "res://.import/fence.obj-92f98416fa0b8520f858ced2c3508c5d.mesh", "res://.import/fence.obj-92f98416fa0b8520f858ced2c3508c5d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

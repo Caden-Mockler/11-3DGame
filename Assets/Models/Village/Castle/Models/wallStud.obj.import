@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/wallStud.obj-97d1ca5cff105fdf357b674ee53fd2aa.mesh"
+
+[deps]
+
+files=[ "res://.import/wallStud.obj-97d1ca5cff105fdf357b674ee53fd2aa.mesh" ]
+
+source_file="res://Assets/Models/Village/Castle/Models/wallStud.obj"
+dest_files=[ "res://.import/wallStud.obj-97d1ca5cff105fdf357b674ee53fd2aa.mesh", "res://.import/wallStud.obj-97d1ca5cff105fdf357b674ee53fd2aa.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/roofLeft.obj-a433ea1f2256e95328bb83e9b306073b.mesh"
+
+[deps]
+
+files=[ "res://.import/roofLeft.obj-a433ea1f2256e95328bb83e9b306073b.mesh" ]
+
+source_file="res://Assets/Models/Village/Fantasy+/roofLeft.obj"
+dest_files=[ "res://.import/roofLeft.obj-a433ea1f2256e95328bb83e9b306073b.mesh", "res://.import/roofLeft.obj-a433ea1f2256e95328bb83e9b306073b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

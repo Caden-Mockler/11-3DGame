@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/lily_large.obj-2362704ebde1444d088dc8ea8d8dd4ab.mesh"
+
+[deps]
+
+files=[ "res://.import/lily_large.obj-2362704ebde1444d088dc8ea8d8dd4ab.mesh" ]
+
+source_file="res://Assets/Models/Forest/More/Models/OBJ format/lily_large.obj"
+dest_files=[ "res://.import/lily_large.obj-2362704ebde1444d088dc8ea8d8dd4ab.mesh", "res://.import/lily_large.obj-2362704ebde1444d088dc8ea8d8dd4ab.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

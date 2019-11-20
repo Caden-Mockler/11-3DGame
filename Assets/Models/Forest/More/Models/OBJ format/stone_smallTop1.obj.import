@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/stone_smallTop1.obj-5ee151bbac7946c5117a7619ef903d2e.mesh"
+
+[deps]
+
+files=[ "res://.import/stone_smallTop1.obj-5ee151bbac7946c5117a7619ef903d2e.mesh" ]
+
+source_file="res://Assets/Models/Forest/More/Models/OBJ format/stone_smallTop1.obj"
+dest_files=[ "res://.import/stone_smallTop1.obj-5ee151bbac7946c5117a7619ef903d2e.mesh", "res://.import/stone_smallTop1.obj-5ee151bbac7946c5117a7619ef903d2e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

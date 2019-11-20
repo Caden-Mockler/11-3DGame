@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/ground_dirtRiverTile.obj-05a7d1ec5a3bba4ad4fb2bd2fa74877c.mesh"
+
+[deps]
+
+files=[ "res://.import/ground_dirtRiverTile.obj-05a7d1ec5a3bba4ad4fb2bd2fa74877c.mesh" ]
+
+source_file="res://Assets/Models/Forest/More/Models/OBJ format/ground_dirtRiverTile.obj"
+dest_files=[ "res://.import/ground_dirtRiverTile.obj-05a7d1ec5a3bba4ad4fb2bd2fa74877c.mesh", "res://.import/ground_dirtRiverTile.obj-05a7d1ec5a3bba4ad4fb2bd2fa74877c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/fountainCenter.obj-130534329e78191d7e05b555a6404d9d.mesh"
+
+[deps]
+
+files=[ "res://.import/fountainCenter.obj-130534329e78191d7e05b555a6404d9d.mesh" ]
+
+source_file="res://Assets/Models/Village/Fantasy+/fountainCenter.obj"
+dest_files=[ "res://.import/fountainCenter.obj-130534329e78191d7e05b555a6404d9d.mesh", "res://.import/fountainCenter.obj-130534329e78191d7e05b555a6404d9d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

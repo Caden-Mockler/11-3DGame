@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Tent_Poles_01.obj-7a932eee3472a3a3a8f1d6ddc14e461d.mesh"
+
+[deps]
+
+files=[ "res://.import/Tent_Poles_01.obj-7a932eee3472a3a3a8f1d6ddc14e461d.mesh" ]
+
+source_file="res://Assets/Models/Forest/Models/Tent_Poles_01.obj"
+dest_files=[ "res://.import/Tent_Poles_01.obj-7a932eee3472a3a3a8f1d6ddc14e461d.mesh", "res://.import/Tent_Poles_01.obj-7a932eee3472a3a3a8f1d6ddc14e461d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

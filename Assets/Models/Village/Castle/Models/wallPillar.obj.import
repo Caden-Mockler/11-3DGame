@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/wallPillar.obj-e501a8d0ed2c9b9f0f5c6f2d0509ed9d.mesh"
+
+[deps]
+
+files=[ "res://.import/wallPillar.obj-e501a8d0ed2c9b9f0f5c6f2d0509ed9d.mesh" ]
+
+source_file="res://Assets/Models/Village/Castle/Models/wallPillar.obj"
+dest_files=[ "res://.import/wallPillar.obj-e501a8d0ed2c9b9f0f5c6f2d0509ed9d.mesh", "res://.import/wallPillar.obj-e501a8d0ed2c9b9f0f5c6f2d0509ed9d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

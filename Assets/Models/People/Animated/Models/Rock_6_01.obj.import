@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Rock_6_01.obj-9de6c2e915b8a77c0e8a26b344cf574d.mesh"
+
+[deps]
+
+files=[ "res://.import/Rock_6_01.obj-9de6c2e915b8a77c0e8a26b344cf574d.mesh" ]
+
+source_file="res://Assets/Models/People/Animated/Models/Rock_6_01.obj"
+dest_files=[ "res://.import/Rock_6_01.obj-9de6c2e915b8a77c0e8a26b344cf574d.mesh", "res://.import/Rock_6_01.obj-9de6c2e915b8a77c0e8a26b344cf574d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Trunk_Alt_02.obj-7d0d296964229e3bfd44ca65f8b050dc.mesh"
+
+[deps]
+
+files=[ "res://.import/Trunk_Alt_02.obj-7d0d296964229e3bfd44ca65f8b050dc.mesh" ]
+
+source_file="res://Assets/Models/People/Animated/Models/Trunk_Alt_02.obj"
+dest_files=[ "res://.import/Trunk_Alt_02.obj-7d0d296964229e3bfd44ca65f8b050dc.mesh", "res://.import/Trunk_Alt_02.obj-7d0d296964229e3bfd44ca65f8b050dc.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

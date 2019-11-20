@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/stallRed.obj-174a7a2c94a60df415317833813ba28a.mesh"
+
+[deps]
+
+files=[ "res://.import/stallRed.obj-174a7a2c94a60df415317833813ba28a.mesh" ]
+
+source_file="res://Assets/Models/Village/Fantasy+/stallRed.obj"
+dest_files=[ "res://.import/stallRed.obj-174a7a2c94a60df415317833813ba28a.mesh", "res://.import/stallRed.obj-174a7a2c94a60df415317833813ba28a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

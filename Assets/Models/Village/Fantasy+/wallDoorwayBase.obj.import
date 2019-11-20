@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/wallDoorwayBase.obj-9594277432d70d9491a9b6dfbc4f56a7.mesh"
+
+[deps]
+
+files=[ "res://.import/wallDoorwayBase.obj-9594277432d70d9491a9b6dfbc4f56a7.mesh" ]
+
+source_file="res://Assets/Models/Village/Fantasy+/wallDoorwayBase.obj"
+dest_files=[ "res://.import/wallDoorwayBase.obj-9594277432d70d9491a9b6dfbc4f56a7.mesh", "res://.import/wallDoorwayBase.obj-9594277432d70d9491a9b6dfbc4f56a7.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

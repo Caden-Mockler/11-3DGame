@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/wallBlock.obj-03a321cc6e394b8cb9baca6c23b63823.mesh"
+
+[deps]
+
+files=[ "res://.import/wallBlock.obj-03a321cc6e394b8cb9baca6c23b63823.mesh" ]
+
+source_file="res://Assets/Models/Village/Fantasy+/wallBlock.obj"
+dest_files=[ "res://.import/wallBlock.obj-03a321cc6e394b8cb9baca6c23b63823.mesh", "res://.import/wallBlock.obj-03a321cc6e394b8cb9baca6c23b63823.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

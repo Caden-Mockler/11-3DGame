@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/knightRed.obj-ebb54e99f82704443377e936a4b7248c.mesh"
+
+[deps]
+
+files=[ "res://.import/knightRed.obj-ebb54e99f82704443377e936a4b7248c.mesh" ]
+
+source_file="res://Assets/Models/Village/Castle/Models/knightRed.obj"
+dest_files=[ "res://.import/knightRed.obj-ebb54e99f82704443377e936a4b7248c.mesh", "res://.import/knightRed.obj-ebb54e99f82704443377e936a4b7248c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

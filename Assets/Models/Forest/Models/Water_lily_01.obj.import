@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Water_lily_01.obj-cef1bc2f4222237d1dfb8f9a0e68f116.mesh"
+
+[deps]
+
+files=[ "res://.import/Water_lily_01.obj-cef1bc2f4222237d1dfb8f9a0e68f116.mesh" ]
+
+source_file="res://Assets/Models/Forest/Models/Water_lily_01.obj"
+dest_files=[ "res://.import/Water_lily_01.obj-cef1bc2f4222237d1dfb8f9a0e68f116.mesh", "res://.import/Water_lily_01.obj-cef1bc2f4222237d1dfb8f9a0e68f116.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/wallDiagonal.obj-c14d97f5120e6d4e03b13d9b360f5db8.mesh"
+
+[deps]
+
+files=[ "res://.import/wallDiagonal.obj-c14d97f5120e6d4e03b13d9b360f5db8.mesh" ]
+
+source_file="res://Assets/Models/Village/Fantasy+/wallDiagonal.obj"
+dest_files=[ "res://.import/wallDiagonal.obj-c14d97f5120e6d4e03b13d9b360f5db8.mesh", "res://.import/wallDiagonal.obj-c14d97f5120e6d4e03b13d9b360f5db8.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/king.obj-1e022524af5faf7c3a336cef26e23b91.mesh"
+
+[deps]
+
+files=[ "res://.import/king.obj-1e022524af5faf7c3a336cef26e23b91.mesh" ]
+
+source_file="res://Assets/Models/Village/Castle/Models/king.obj"
+dest_files=[ "res://.import/king.obj-1e022524af5faf7c3a336cef26e23b91.mesh", "res://.import/king.obj-1e022524af5faf7c3a336cef26e23b91.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Plate_River_Corner_Dirt_01.obj-cc1e8b27066ad966015073aa4eaaa8ee.mesh"
+
+[deps]
+
+files=[ "res://.import/Plate_River_Corner_Dirt_01.obj-cc1e8b27066ad966015073aa4eaaa8ee.mesh" ]
+
+source_file="res://Assets/Models/People/Animated/Models/Plate_River_Corner_Dirt_01.obj"
+dest_files=[ "res://.import/Plate_River_Corner_Dirt_01.obj-cc1e8b27066ad966015073aa4eaaa8ee.mesh", "res://.import/Plate_River_Corner_Dirt_01.obj-cc1e8b27066ad966015073aa4eaaa8ee.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

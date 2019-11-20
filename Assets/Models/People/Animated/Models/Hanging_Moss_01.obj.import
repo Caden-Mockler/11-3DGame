@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Hanging_Moss_01.obj-76737aec159be23580bf8029cf3c8435.mesh"
+
+[deps]
+
+files=[ "res://.import/Hanging_Moss_01.obj-76737aec159be23580bf8029cf3c8435.mesh" ]
+
+source_file="res://Assets/Models/People/Animated/Models/Hanging_Moss_01.obj"
+dest_files=[ "res://.import/Hanging_Moss_01.obj-76737aec159be23580bf8029cf3c8435.mesh", "res://.import/Hanging_Moss_01.obj-76737aec159be23580bf8029cf3c8435.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

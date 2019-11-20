@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/wallWoodCornerDiagonalHalf.obj-f3e88cd28017db3cdc165628c6868f0e.mesh"
+
+[deps]
+
+files=[ "res://.import/wallWoodCornerDiagonalHalf.obj-f3e88cd28017db3cdc165628c6868f0e.mesh" ]
+
+source_file="res://Assets/Models/Village/Fantasy+/wallWoodCornerDiagonalHalf.obj"
+dest_files=[ "res://.import/wallWoodCornerDiagonalHalf.obj-f3e88cd28017db3cdc165628c6868f0e.mesh", "res://.import/wallWoodCornerDiagonalHalf.obj-f3e88cd28017db3cdc165628c6868f0e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

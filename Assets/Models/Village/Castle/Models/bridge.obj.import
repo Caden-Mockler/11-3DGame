@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/bridge.obj-f8924a7caabad12587d75d2d088bf98b.mesh"
+
+[deps]
+
+files=[ "res://.import/bridge.obj-f8924a7caabad12587d75d2d088bf98b.mesh" ]
+
+source_file="res://Assets/Models/Village/Castle/Models/bridge.obj"
+dest_files=[ "res://.import/bridge.obj-f8924a7caabad12587d75d2d088bf98b.mesh", "res://.import/bridge.obj-f8924a7caabad12587d75d2d088bf98b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

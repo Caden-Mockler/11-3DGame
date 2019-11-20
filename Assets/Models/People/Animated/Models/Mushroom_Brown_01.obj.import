@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Mushroom_Brown_01.obj-1114744ef2140fbb0c53f3f4caedc82c.mesh"
+
+[deps]
+
+files=[ "res://.import/Mushroom_Brown_01.obj-1114744ef2140fbb0c53f3f4caedc82c.mesh" ]
+
+source_file="res://Assets/Models/People/Animated/Models/Mushroom_Brown_01.obj"
+dest_files=[ "res://.import/Mushroom_Brown_01.obj-1114744ef2140fbb0c53f3f4caedc82c.mesh", "res://.import/Mushroom_Brown_01.obj-1114744ef2140fbb0c53f3f4caedc82c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Grey_Cliff_End_Green_Top_01.obj-ce4fd7e111d78f60325cd0f3548b3186.mesh"
+
+[deps]
+
+files=[ "res://.import/Grey_Cliff_End_Green_Top_01.obj-ce4fd7e111d78f60325cd0f3548b3186.mesh" ]
+
+source_file="res://Assets/Models/People/Animated/Models/Grey_Cliff_End_Green_Top_01.obj"
+dest_files=[ "res://.import/Grey_Cliff_End_Green_Top_01.obj-ce4fd7e111d78f60325cd0f3548b3186.mesh", "res://.import/Grey_Cliff_End_Green_Top_01.obj-ce4fd7e111d78f60325cd0f3548b3186.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

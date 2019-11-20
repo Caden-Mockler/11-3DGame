@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Brown_Waterfall_01.obj-5f7d9a38ef7f0722e1c629450f06c10d.mesh"
+
+[deps]
+
+files=[ "res://.import/Brown_Waterfall_01.obj-5f7d9a38ef7f0722e1c629450f06c10d.mesh" ]
+
+source_file="res://Assets/Models/People/Animated/Models/Brown_Waterfall_01.obj"
+dest_files=[ "res://.import/Brown_Waterfall_01.obj-5f7d9a38ef7f0722e1c629450f06c10d.mesh", "res://.import/Brown_Waterfall_01.obj-5f7d9a38ef7f0722e1c629450f06c10d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

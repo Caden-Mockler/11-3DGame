@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/hedge.obj-002550fd54aeb6681be0dd257f739c21.mesh"
+
+[deps]
+
+files=[ "res://.import/hedge.obj-002550fd54aeb6681be0dd257f739c21.mesh" ]
+
+source_file="res://Assets/Models/Village/Fantasy+/hedge.obj"
+dest_files=[ "res://.import/hedge.obj-002550fd54aeb6681be0dd257f739c21.mesh", "res://.import/hedge.obj-002550fd54aeb6681be0dd257f739c21.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

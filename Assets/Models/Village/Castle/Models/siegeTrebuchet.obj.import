@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/siegeTrebuchet.obj-ab74c600a7ef461a3443c537121fe71b.mesh"
+
+[deps]
+
+files=[ "res://.import/siegeTrebuchet.obj-ab74c600a7ef461a3443c537121fe71b.mesh" ]
+
+source_file="res://Assets/Models/Village/Castle/Models/siegeTrebuchet.obj"
+dest_files=[ "res://.import/siegeTrebuchet.obj-ab74c600a7ef461a3443c537121fe71b.mesh", "res://.import/siegeTrebuchet.obj-ab74c600a7ef461a3443c537121fe71b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

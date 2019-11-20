@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/wallWindowStone.obj-9b583a87e14bbf2c6ae6434971d443fd.mesh"
+
+[deps]
+
+files=[ "res://.import/wallWindowStone.obj-9b583a87e14bbf2c6ae6434971d443fd.mesh" ]
+
+source_file="res://Assets/Models/Village/Fantasy+/wallWindowStone.obj"
+dest_files=[ "res://.import/wallWindowStone.obj-9b583a87e14bbf2c6ae6434971d443fd.mesh", "res://.import/wallWindowStone.obj-9b583a87e14bbf2c6ae6434971d443fd.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

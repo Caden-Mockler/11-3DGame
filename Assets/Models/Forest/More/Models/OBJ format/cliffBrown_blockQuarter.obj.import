@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/cliffBrown_blockQuarter.obj-f101f6416d924b93e1b4dcccd88fe722.mesh"
+
+[deps]
+
+files=[ "res://.import/cliffBrown_blockQuarter.obj-f101f6416d924b93e1b4dcccd88fe722.mesh" ]
+
+source_file="res://Assets/Models/Forest/More/Models/OBJ format/cliffBrown_blockQuarter.obj"
+dest_files=[ "res://.import/cliffBrown_blockQuarter.obj-f101f6416d924b93e1b4dcccd88fe722.mesh", "res://.import/cliffBrown_blockQuarter.obj-f101f6416d924b93e1b4dcccd88fe722.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/stone_tall1.obj-5b7a16c9488dc972ac2a950a2584ef12.mesh"
+
+[deps]
+
+files=[ "res://.import/stone_tall1.obj-5b7a16c9488dc972ac2a950a2584ef12.mesh" ]
+
+source_file="res://Assets/Models/Forest/More/Models/OBJ format/stone_tall1.obj"
+dest_files=[ "res://.import/stone_tall1.obj-5b7a16c9488dc972ac2a950a2584ef12.mesh", "res://.import/stone_tall1.obj-5b7a16c9488dc972ac2a950a2584ef12.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

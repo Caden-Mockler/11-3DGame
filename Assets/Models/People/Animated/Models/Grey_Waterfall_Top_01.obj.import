@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Grey_Waterfall_Top_01.obj-6cdb06c5d65025b17441143c052bffd2.mesh"
+
+[deps]
+
+files=[ "res://.import/Grey_Waterfall_Top_01.obj-6cdb06c5d65025b17441143c052bffd2.mesh" ]
+
+source_file="res://Assets/Models/People/Animated/Models/Grey_Waterfall_Top_01.obj"
+dest_files=[ "res://.import/Grey_Waterfall_Top_01.obj-6cdb06c5d65025b17441143c052bffd2.mesh", "res://.import/Grey_Waterfall_Top_01.obj-6cdb06c5d65025b17441143c052bffd2.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

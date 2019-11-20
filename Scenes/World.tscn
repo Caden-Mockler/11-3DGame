@@ -35,12 +35,12 @@ script = ExtResource( 1 )
 transform = Transform( -0.615024, 0, 0.788508, 0, 1, 0, -0.788508, 0, -0.615024, 70.4656, 0, 3.48462 )
 
 [node name="MeshInstance" type="MeshInstance" parent="Ground"]
-transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0.0944824, 0.0631903, 0.0122833 )
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -0.797455, -0.202717, 0.239952 )
 mesh = SubResource( 2 )
 material/0 = SubResource( 3 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Ground"]
-transform = Transform( 100, 0, 0, 0, 1.05, 0, 0, 0, 100, -0.404198, -1.0218, 0.810875 )
+transform = Transform( 100, 0, 0, 0, 1.05, 0, 0, 0, 100, -0.404194, -1.0218, 0.810875 )
 shape = SubResource( 4 )
 
 [node name="Crate" parent="." instance=ExtResource( 3 )]

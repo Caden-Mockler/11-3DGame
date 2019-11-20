@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/polesHorizontal.obj-ddd0d439171ad3d5b4266f93bb8662b6.mesh"
+
+[deps]
+
+files=[ "res://.import/polesHorizontal.obj-ddd0d439171ad3d5b4266f93bb8662b6.mesh" ]
+
+source_file="res://Assets/Models/Village/Fantasy+/polesHorizontal.obj"
+dest_files=[ "res://.import/polesHorizontal.obj-ddd0d439171ad3d5b4266f93bb8662b6.mesh", "res://.import/polesHorizontal.obj-ddd0d439171ad3d5b4266f93bb8662b6.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Plant_2_01.obj-c3d3efbdc59808e78b1df651c2cd18ee.mesh"
+
+[deps]
+
+files=[ "res://.import/Plant_2_01.obj-c3d3efbdc59808e78b1df651c2cd18ee.mesh" ]
+
+source_file="res://Assets/Models/People/Animated/Models/Plant_2_01.obj"
+dest_files=[ "res://.import/Plant_2_01.obj-c3d3efbdc59808e78b1df651c2cd18ee.mesh", "res://.import/Plant_2_01.obj-c3d3efbdc59808e78b1df651c2cd18ee.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

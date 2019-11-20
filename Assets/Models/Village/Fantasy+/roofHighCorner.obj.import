@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/roofHighCorner.obj-c4fdff4395f16f7ce92f637cefad0cc8.mesh"
+
+[deps]
+
+files=[ "res://.import/roofHighCorner.obj-c4fdff4395f16f7ce92f637cefad0cc8.mesh" ]
+
+source_file="res://Assets/Models/Village/Fantasy+/roofHighCorner.obj"
+dest_files=[ "res://.import/roofHighCorner.obj-c4fdff4395f16f7ce92f637cefad0cc8.mesh", "res://.import/roofHighCorner.obj-c4fdff4395f16f7ce92f637cefad0cc8.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

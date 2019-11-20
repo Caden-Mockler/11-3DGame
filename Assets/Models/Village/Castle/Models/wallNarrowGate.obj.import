@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/wallNarrowGate.obj-8d691ffed90de54a1812ae5db24a3cfa.mesh"
+
+[deps]
+
+files=[ "res://.import/wallNarrowGate.obj-8d691ffed90de54a1812ae5db24a3cfa.mesh" ]
+
+source_file="res://Assets/Models/Village/Castle/Models/wallNarrowGate.obj"
+dest_files=[ "res://.import/wallNarrowGate.obj-8d691ffed90de54a1812ae5db24a3cfa.mesh", "res://.import/wallNarrowGate.obj-8d691ffed90de54a1812ae5db24a3cfa.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

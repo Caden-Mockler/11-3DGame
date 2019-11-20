@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/wallWindowRound.obj-a13a3549766930eaf88eb08ba8261946.mesh"
+
+[deps]
+
+files=[ "res://.import/wallWindowRound.obj-a13a3549766930eaf88eb08ba8261946.mesh" ]
+
+source_file="res://Assets/Models/Village/Fantasy+/wallWindowRound.obj"
+dest_files=[ "res://.import/wallWindowRound.obj-a13a3549766930eaf88eb08ba8261946.mesh", "res://.import/wallWindowRound.obj-a13a3549766930eaf88eb08ba8261946.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

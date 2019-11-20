@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/roadEdge.obj-78dec0c2c751c221c14d6b968bd10171.mesh"
+
+[deps]
+
+files=[ "res://.import/roadEdge.obj-78dec0c2c751c221c14d6b968bd10171.mesh" ]
+
+source_file="res://Assets/Models/Village/Fantasy+/roadEdge.obj"
+dest_files=[ "res://.import/roadEdge.obj-78dec0c2c751c221c14d6b968bd10171.mesh", "res://.import/roadEdge.obj-78dec0c2c751c221c14d6b968bd10171.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true
