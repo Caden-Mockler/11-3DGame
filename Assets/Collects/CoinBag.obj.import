@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/CoinBag.obj-c6890ae7bc8d6836a3b86ffa4bfcc62a.mesh"
+
+[deps]
+
+files=[ "res://.import/CoinBag.obj-c6890ae7bc8d6836a3b86ffa4bfcc62a.mesh" ]
+
+source_file="res://Assets/Collects/CoinBag.obj"
+dest_files=[ "res://.import/CoinBag.obj-c6890ae7bc8d6836a3b86ffa4bfcc62a.mesh", "res://.import/CoinBag.obj-c6890ae7bc8d6836a3b86ffa4bfcc62a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

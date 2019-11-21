@@ -1,10 +1,25 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://Scenes/World.gd" type="Script" id=1]
-[ext_resource path="res://Assets/Nature/TexturesCom_Nature_Moss_1K_albedo.png" type="Texture" id=2]
-[ext_resource path="res://Scenes/Crate.tscn" type="PackedScene" id=3]
-[ext_resource path="res://FPSCharacter.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Assets/Nature/TexturesCom_StoneWall2_3x3_1K_albedo.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Models/Forest/More/Models/OBJ format/ground_dirt.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://Assets/Nature/TexturesCom_Nature_Moss_1K_albedo.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/Crate.tscn" type="PackedScene" id=4]
+[ext_resource path="res://FPSCharacter.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Assets/Models/Village/Castle/Models/wallNarrow.obj" type="ArrayMesh" id=6]
+[ext_resource path="res://Assets/Models/Village/Castle/Models/wallNarrowGate.obj" type="ArrayMesh" id=7]
+[ext_resource path="res://Assets/Models/Forest/Models/Wood_Fence_01.obj" type="ArrayMesh" id=8]
+[ext_resource path="res://Assets/Models/Village/Fantasy+/wallBlock.obj" type="ArrayMesh" id=9]
+[ext_resource path="res://Assets/Models/Village/Fantasy+/wallWindowGlass.obj" type="ArrayMesh" id=10]
+[ext_resource path="res://Assets/Models/Village/Fantasy+/wallWoodDoor.obj" type="ArrayMesh" id=11]
+[ext_resource path="res://Assets/Models/Village/Fantasy+/roofHighGableTop.obj" type="ArrayMesh" id=12]
+[ext_resource path="res://Assets/Models/Village/Fantasy+/cartHigh.obj" type="ArrayMesh" id=13]
+[ext_resource path="res://Assets/Models/Village/Fantasy+/stallGreen.obj" type="ArrayMesh" id=14]
+[ext_resource path="res://Assets/Models/Village/Fantasy+/bannerGreen.obj" type="ArrayMesh" id=15]
+[ext_resource path="res://Assets/Models/Forest/Models/Brown_Cliff_Bottom_01.obj" type="ArrayMesh" id=16]
+[ext_resource path="res://SFX/2013-02-20_A_Heros_Defeat_-_David_Fesliyan.wav" type="AudioStream" id=17]
+[ext_resource path="res://Scenes/AudioStreamPlayer.gd" type="Script" id=18]
+[ext_resource path="res://Scenes/Potion.tscn" type="PackedScene" id=19]
+[ext_resource path="res://CoinBag.tscn" type="PackedScene" id=20]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_color = Color( 0.286275, 0.313726, 0.341176, 1 )
@@ -15,27 +30,41 @@ size = Vector2( 100, 100 )
 
 [sub_resource type="SpatialMaterial" id=3]
 albedo_color = Color( 0.498039, 0.654902, 0.380392, 1 )
-albedo_texture = ExtResource( 2 )
+albedo_texture = ExtResource( 3 )
 
 [sub_resource type="BoxShape" id=4]
 
 [sub_resource type="BoxShape" id=5]
-extents = Vector3( 0.25, 5, 1.5 )
+extents = Vector3( 6.33794, 8.23786, 8.28991 )
 
-[sub_resource type="CubeMesh" id=6]
-size = Vector3( 0.5, 4, 3 )
+[sub_resource type="BoxShape" id=6]
+extents = Vector3( 3.33078, 5.6531, 2.49346 )
 
-[sub_resource type="SpatialMaterial" id=7]
-albedo_texture = ExtResource( 5 )
+[sub_resource type="BoxShape" id=7]
+extents = Vector3( 124.003, 67.1575, 6.1149 )
+
+[sub_resource type="BoxShape" id=8]
+extents = Vector3( 7.96716, 66.5838, 67.4285 )
+
+[sub_resource type="BoxShape" id=9]
+extents = Vector3( 3.66025, 10.549, 45.7117 )
 
 [node name="World" type="Spatial"]
 script = ExtResource( 1 )
 
+[node name="ground_dirt" type="MeshInstance" parent="."]
+transform = Transform( -12.3005, 0, 15.7702, 0, 1, 0, -15.7702, 0, -12.3005, 212.176, -2.49487, 20.277 )
+visible = false
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+
 [node name="Ground" type="StaticBody" parent="."]
+editor/display_folded = true
 transform = Transform( -0.615024, 0, 0.788508, 0, 1, 0, -0.788508, 0, -0.615024, 70.4656, 0, 3.48462 )
 
 [node name="MeshInstance" type="MeshInstance" parent="Ground"]
-transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -0.797455, -0.202717, 0.239952 )
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -1.58596, -0.202717, -0.375072 )
 mesh = SubResource( 2 )
 material/0 = SubResource( 3 )
 
@@ -43,972 +72,448 @@ material/0 = SubResource( 3 )
 transform = Transform( 100, 0, 0, 0, 1.05, 0, 0, 0, 100, -0.404194, -1.0218, 0.810875 )
 shape = SubResource( 4 )
 
-[node name="Crate" parent="." instance=ExtResource( 3 )]
-transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -4.67044, 1.03971, -3.432 )
+[node name="Crate" parent="." instance=ExtResource( 4 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -4.67044, 0.374158, -3.432 )
 
-[node name="Crate2" parent="." instance=ExtResource( 3 )]
-transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -4.73354, 0.925947, -2.3597 )
+[node name="Crate2" parent="." instance=ExtResource( 4 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -4.73354, 0.350795, -2.3597 )
 
-[node name="Crate3" parent="." instance=ExtResource( 3 )]
-transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -4.69052, 2.05193, -2.7481 )
+[node name="Crate3" parent="." instance=ExtResource( 4 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -4.69052, 1.38989, -2.7481 )
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
-transform = Transform( -0.903632, 0.382522, -0.192681, -0.078465, 0.294405, 0.952454, 0.421061, 0.875787, -0.23602, -8.14743, 10.5401, 5.3779 )
+transform = Transform( -0.903632, 0.382522, -0.192681, -0.078465, 0.294405, 0.952454, 0.421061, 0.875787, -0.236019, -8.14743, 80.2782, 5.3779 )
 light_color = Color( 0.992157, 0.992157, 0.992157, 1 )
 light_energy = 3.0
 shadow_enabled = true
 shadow_color = Color( 0.129412, 0.145098, 0.160784, 1 )
 
-[node name="FPSCharacter" parent="." instance=ExtResource( 4 )]
-transform = Transform( 0.745, 0, 0.667, 0, 1, 0, -0.667, 0, 0.745, 10.757, 1.46229, 14.706 )
+[node name="FPSCharacter" parent="." instance=ExtResource( 5 )]
+transform = Transform( 0.745, 0, 0.667, 0, 1, 0, -0.667, 0, 0.745, -12.243, 1.46229, 14.706 )
 
 [node name="Walls" type="Spatial" parent="."]
 editor/display_folded = true
-
-[node name="Boundry" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( -0.0175222, 0, -0.999962, 0, 1, 0, 1.99992, 0, -0.0087611, 2.08891, 0.906782, 13.0375 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry28" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, -32.9111, 0.906782, -8.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry28"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry28"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry57" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 0.0175222, 0, 0.999962, 0, 1, 0, -1.99992, 0, 0.00876112, 2.08891, 0.906782, -29.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry57"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry57"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry2" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( -0.0175222, 0, -0.999962, 0, 1, 0, 1.99992, 0, -0.0087611, 5.08891, 0.906782, 13.0375 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry2"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry2"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry38" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, -32.9111, 0.906782, -11.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry38"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry38"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry41" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 0.0175222, 0, 0.999962, 0, 1, 0, -1.99992, 0, 0.00876112, -0.911087, 0.906782, -29.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry41"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry41"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry3" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( -0.0175222, 0, -0.999962, 0, 1, 0, 1.99992, 0, -0.0087611, 5.08891, 0.906782, 13.0375 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry3"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry3"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry29" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, -32.9111, 0.906782, -11.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry29"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry29"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry58" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 0.0175222, 0, 0.999962, 0, 1, 0, -1.99992, 0, 0.00876112, -0.911087, 0.906782, -29.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry58"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry58"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry4" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( -0.0175222, 0, -0.999962, 0, 1, 0, 1.99992, 0, -0.0087611, 8.08891, 0.906782, 13.0375 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry4"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry4"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry39" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, -32.9111, 0.906782, -14.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry39"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry39"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry42" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 0.0175222, 0, 0.999962, 0, 1, 0, -1.99992, 0, 0.00876112, -3.91109, 0.906782, -29.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry42"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry42"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry5" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( -0.0175222, 0, -0.999962, 0, 1, 0, 1.99992, 0, -0.0087611, 11.0889, 0.906782, 13.0375 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry5"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry5"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry27" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, -32.9111, 0.906782, -17.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry27"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry27"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry56" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 0.0175222, 0, 0.999962, 0, 1, 0, -1.99992, 0, 0.00876112, -6.91109, 0.906782, -29.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry56"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry56"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry65" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, 24.0889, 0.906782, -16.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry65"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry65"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry6" type="StaticBody" parent="Walls"]
-transform = Transform( -0.0175222, 0, -0.999962, 0, 1, 0, 1.99992, 0, -0.0087611, 14.0889, 0.906782, 13.0375 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry6"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry6"]
-transform = Transform( 1, 0, -4.65661e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry40" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, -32.9111, 0.906782, -20.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry40"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry40"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry43" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 0.0175222, 0, 0.999962, 0, 1, 0, -1.99992, 0, 0.00876112, -9.91109, 0.906782, -29.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry43"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry43"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry63" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, 24.0889, 0.906782, -19.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry63"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry63"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry7" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( -0.0175222, 0, -0.999962, 0, 1, 0, 1.99992, 0, -0.0087611, 17.0889, 0.906782, 13.0375 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry7"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry7"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry32" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, -32.9111, 0.906782, -23.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry32"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry32"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry60" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 0.0175222, 0, 0.999962, 0, 1, 0, -1.99992, 0, 0.00876112, -12.9111, 0.906782, -29.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry60"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry60"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry69" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, 24.0889, 0.906782, -22.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry69"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry69"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry8" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( -0.0175222, 0, -0.999962, 0, 1, 0, 1.99992, 0, -0.0087611, 20.0889, 0.906782, 13.0375 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry8"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry8"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry30" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, -32.9111, 0.906782, -26.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry30"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry30"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry59" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 0.0175222, 0, 0.999962, 0, 1, 0, -1.99992, 0, 0.00876112, -15.9111, 0.906782, -29.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry59"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry59"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry67" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, 24.0889, 0.906782, -25.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry67"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry67"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry9" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( -0.0175222, 0, -0.999962, 0, 1, 0, 1.99992, 0, -0.0087611, -0.911091, 0.906782, 13.0375 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry9"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry9"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry31" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, -32.9111, 0.906782, -5.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry31"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry31"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry49" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 0.0175222, 0, 0.999962, 0, 1, 0, -1.99992, 0, 0.00876112, 5.08891, 0.906782, -29.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry49"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry49"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry10" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( -0.0175222, 0, -0.999962, 0, 1, 0, 1.99992, 0, -0.0087611, -3.91109, 0.906782, 13.0375 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry10"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry10"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry33" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, -32.9111, 0.906782, -2.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry33"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry33"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry44" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 0.0175222, 0, 0.999962, 0, 1, 0, -1.99992, 0, 0.00876112, 8.08891, 0.906782, -29.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry44"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry44"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry11" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( -0.0175222, 0, -0.999962, 0, 1, 0, 1.99992, 0, -0.0087611, -6.91109, 0.906782, 13.0375 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry11"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry11"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry34" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, -32.9111, 0.906782, 0.0375013 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry34"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry34"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry50" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 0.0175222, 0, 0.999962, 0, 1, 0, -1.99992, 0, 0.00876112, 11.0889, 0.906782, -29.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry50"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry50"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry12" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( -0.0175222, 0, -0.999962, 0, 1, 0, 1.99992, 0, -0.0087611, -9.91109, 0.906782, 13.0375 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry12"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry12"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry21" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, -32.9111, 0.906782, 3.0375 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry21"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry21"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry47" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 0.0175222, 0, 0.999962, 0, 1, 0, -1.99992, 0, 0.00876112, 14.0889, 0.906782, -29.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry47"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry47"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry72" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, 24.0889, 0.906782, 4.0375 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry72"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry72"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry13" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( -0.0175222, 0, -0.999962, 0, 1, 0, 1.99992, 0, -0.0087611, -12.9111, 0.906782, 13.0375 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry13"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry13"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry22" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, -32.9111, 0.906782, 6.0375 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry22"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry22"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry54" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 0.0175222, 0, 0.999962, 0, 1, 0, -1.99992, 0, 0.00876112, 17.0889, 0.906782, -29.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry54"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry54"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry80" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, 24.0889, 0.906782, 7.0375 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry80"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry80"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry14" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( -0.0175222, 0, -0.999962, 0, 1, 0, 1.99992, 0, -0.0087611, -15.9111, 0.906782, 13.0375 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry14"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry14"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry23" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, -32.9111, 0.906782, 9.0375 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry23"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry23"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry53" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 0.0175222, 0, 0.999962, 0, 1, 0, -1.99992, 0, 0.00876112, 20.0889, 0.906782, -29.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry53"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry53"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry73" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, 24.0889, 0.906782, 10.0375 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry73"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry73"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry15" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( -0.0175222, 0, -0.999962, 0, 1, 0, 1.99992, 0, -0.0087611, -18.9111, 0.906782, 13.0375 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry15"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry15"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry37" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, -32.9111, 0.906782, 12.0375 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry37"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry37"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry52" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 0.0175222, 0, 0.999962, 0, 1, 0, -1.99992, 0, 0.00876112, 23.0889, 0.906782, -29.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry52"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry52"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry79" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, 24.0889, 0.906782, 13.0375 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry79"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry79"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry16" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( -0.0175222, 0, -0.999962, 0, 1, 0, 1.99992, 0, -0.0087611, -21.9111, 0.906782, 13.0375 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry16"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry16"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry35" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, -32.9111, 0.906782, 15.0375 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry35"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry35"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry45" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 0.0175222, 0, 0.999962, 0, 1, 0, -1.99992, 0, 0.00876112, 26.0889, 0.906782, -29.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry45"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry45"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry71" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, 24.0889, 0.906782, 16.0375 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry71"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry71"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry17" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( -0.0175222, 0, -0.999962, 0, 1, 0, 1.99992, 0, -0.0087611, -24.9111, 0.906782, 13.0375 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry17"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry17"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry24" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, -32.9111, 0.906782, 18.0375 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry24"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry24"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry55" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 0.0175222, 0, 0.999962, 0, 1, 0, -1.99992, 0, 0.00876112, 29.0889, 0.906782, -29.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry55"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry55"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry76" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, 24.0889, 0.906782, 19.0375 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry76"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry76"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry18" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( -0.0175222, 0, -0.999962, 0, 1, 0, 1.99992, 0, -0.0087611, 23.0889, 0.906782, 13.0375 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry18"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry18"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry36" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, -32.9111, 0.906782, -29.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry36"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry36"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry51" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 0.0175222, 0, 0.999962, 0, 1, 0, -1.99992, 0, 0.00876112, -18.9111, 0.906782, -29.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry51"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry51"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry75" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, 24.0889, 0.906782, -28.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry75"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry75"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry19" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( -0.0175222, 0, -0.999962, 0, 1, 0, 1.99992, 0, -0.0087611, 26.0889, 0.906782, 13.0375 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry19"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry19"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry25" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, -32.9111, 0.906782, -32.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry25"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry25"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry46" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 0.0175222, 0, 0.999962, 0, 1, 0, -1.99992, 0, 0.00876112, -21.9111, 0.906782, -29.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry46"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry46"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry74" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, 24.0889, 0.906782, -31.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry74"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry74"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry20" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( -0.0175222, 0, -0.999962, 0, 1, 0, 1.99992, 0, -0.0087611, 29.0889, 0.906782, 13.0375 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry20"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry20"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry26" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, -32.9111, 0.906782, -35.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry26"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry26"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry48" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 0.0175222, 0, 0.999962, 0, 1, 0, -1.99992, 0, 0.00876112, -24.9111, 0.906782, -29.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry48"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry48"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
-
-[node name="Boundry77" type="StaticBody" parent="Walls"]
-editor/display_folded = true
-transform = Transform( 1.99992, 0, -0.00876117, 0, 1, 0, 0.0175223, 0, 0.999962, 24.0889, 0.906782, -34.9625 )
-
-[node name="CollisionShape" type="CollisionShape" parent="Walls/Boundry77"]
-transform = Transform( 1, 0, -1.39698e-009, 0, 1, 0, 0, 0, 1, 3.46034, 0, -2.23517e-008 )
-shape = SubResource( 5 )
-
-[node name="MeshInstance" type="MeshInstance" parent="Walls/Boundry77"]
-transform = Transform( 1, 0, -4.19095e-009, 0, 1, 0, 0, 0, 1, 3.46397, 1.04981, 0 )
-mesh = SubResource( 6 )
-material/0 = SubResource( 7 )
+transform = Transform( -1.23005, 0, 1.57702, 0, 2, 0, -1.57702, 0, -1.23005, 71.1453, -0.202717, 3.96584 )
+
+[node name="wallNarrow" type="MeshInstance" parent="Walls"]
+transform = Transform( 0.307512, 0, 0.394254, 0, 0.5, 0, -0.394254, 0, 0.307512, 49.0208, -0.398641, -4.34193 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="wallNarrow2" type="MeshInstance" parent="Walls"]
+transform = Transform( 0.307512, 0, 0.394254, 0, 0.5, 0, -0.394254, 0, 0.307512, 45.4725, -0.398641, -7.10954 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="wallNarrow3" type="MeshInstance" parent="Walls"]
+transform = Transform( 0.307512, 0, 0.394254, 0, 0.5, 0, -0.394254, 0, 0.307512, 41.53, -0.398641, -10.1847 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="wallNarrow4" type="MeshInstance" parent="Walls"]
+transform = Transform( 0.307512, 0, 0.394254, 0, 0.5, 0, -0.394254, 0, 0.307512, 37.5875, -0.398641, -13.2598 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="wallNarrow5" type="MeshInstance" parent="Walls"]
+transform = Transform( 0.307512, 0, 0.394254, 0, 0.5, 0, -0.394254, 0, 0.307512, 33.6449, -0.398641, -16.3349 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="wallNarrow6" type="MeshInstance" parent="Walls"]
+transform = Transform( 0.307512, 0, 0.394254, 0, 0.5, 0, -0.394254, 0, 0.307512, 22.2116, -0.398641, -25.2528 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="wallNarrow7" type="MeshInstance" parent="Walls"]
+transform = Transform( 0.307512, 0, 0.394254, 0, 0.5, 0, -0.394254, 0, 0.307512, 18.269, -0.398641, -28.3279 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="wallNarrow8" type="MeshInstance" parent="Walls"]
+transform = Transform( 0.307512, 0, 0.394254, 0, 0.5, 0, -0.394254, 0, 0.307512, 14.3265, -0.398641, -31.403 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="wallNarrow9" type="MeshInstance" parent="Walls"]
+transform = Transform( 0.307512, 0, 0.394254, 0, 0.5, 0, -0.394254, 0, 0.307512, 10.3839, -0.398641, -34.4781 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="wallNarrow10" type="MeshInstance" parent="Walls"]
+transform = Transform( 0.307512, 0, 0.394254, 0, 0.5, 0, -0.394254, 0, 0.307512, 6.44139, -0.398641, -37.5532 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="wallNarrow11" type="MeshInstance" parent="Walls"]
+transform = Transform( 0.307512, 0, 0.394254, 0, 0.5, 0, -0.394254, 0, 0.307512, 2.49885, -0.398641, -40.6284 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="wallNarrow12" type="MeshInstance" parent="Walls"]
+transform = Transform( 0.307512, 0, 0.394254, 0, 0.5, 0, -0.394254, 0, 0.307512, -1.44369, -0.398641, -43.7035 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="wallNarrow13" type="MeshInstance" parent="Walls"]
+transform = Transform( 0.307512, 0, 0.394254, 0, 0.5, 0, -0.394254, 0, 0.307512, -5.38624, -0.398641, -46.7786 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="wallNarrowGate" type="MeshInstance" parent="Walls"]
+transform = Transform( 0.307512, 0, 0.788508, 0, 0.5, 0, -0.394254, 0, 0.615024, 30.0967, -0.398641, -19.1025 )
+mesh = ExtResource( 7 )
+material/0 = null
+material/1 = null
+
+[node name="Wood_Fence_01" type="MeshInstance" parent="Walls"]
+transform = Transform( -0.307512, 0, -0.394254, 0, 0.5, 0, 0.394254, 0, -0.307512, 28.6536, 2.60136, -22.1304 )
+mesh = ExtResource( 8 )
+material/0 = null
+
+[node name="Wood_Fence_02" type="MeshInstance" parent="Walls"]
+transform = Transform( -0.307512, 0, -0.394254, 0, 0.5, 0, 0.394254, 0, -0.307512, 27.4709, 2.60136, -23.0529 )
+mesh = ExtResource( 8 )
+material/0 = null
+
+[node name="Wood_Fence_03" type="MeshInstance" parent="Walls"]
+transform = Transform( -0.307512, 0, -0.394254, 0, 0.5, 0, 0.394254, 0, -0.307512, 26.2881, 2.60136, -23.9754 )
+mesh = ExtResource( 8 )
+material/0 = null
+
+[node name="Wood_Fence_04" type="MeshInstance" parent="Walls"]
+transform = Transform( -0.307512, 0, -0.394254, 0, 0.5, 0, 0.394254, 0, -0.307512, 25.4996, 2.60136, -24.5904 )
+mesh = ExtResource( 8 )
+material/0 = null
+
+[node name="Wood_Fence_05" type="MeshInstance" parent="Walls"]
+transform = Transform( -0.307512, 0, -0.394254, 0, 0.5, 0, 0.394254, 0, -0.307512, 24.3168, 2.60136, -25.513 )
+mesh = ExtResource( 8 )
+material/0 = null
+
+[node name="Wood_Fence_06" type="MeshInstance" parent="Walls"]
+transform = Transform( -0.307512, 0, -0.394254, 0, 0.5, 0, 0.394254, 0, -0.307512, 24.7111, 3.10136, -25.2055 )
+mesh = ExtResource( 8 )
+material/0 = null
+
+[node name="Wood_Fence_07" type="MeshInstance" parent="Walls"]
+transform = Transform( -0.307512, 0, -0.394254, 0, 0.5, 0, 0.394254, 0, -0.307512, 25.8939, 3.10136, -24.2829 )
+mesh = ExtResource( 8 )
+material/0 = null
+
+[node name="Wood_Fence_08" type="MeshInstance" parent="Walls"]
+transform = Transform( -0.307512, 0, -0.394254, 0, 0.5, 0, 0.394254, 0, -0.307512, 27.0766, 3.10136, -23.3604 )
+mesh = ExtResource( 8 )
+material/0 = null
+
+[node name="Wood_Fence_09" type="MeshInstance" parent="Walls"]
+transform = Transform( -0.307512, 0, -0.394254, 0, 0.5, 0, 0.394254, 0, -0.307512, 28.2594, 3.10136, -22.4379 )
+mesh = ExtResource( 8 )
+material/0 = null
+
+[node name="Wood_Fence_10" type="MeshInstance" parent="Walls"]
+transform = Transform( -0.307512, 0, -0.394254, 0, 0.5, 0, 0.394254, 0, -0.307512, 27.8652, 3.60136, -22.7454 )
+mesh = ExtResource( 8 )
+material/0 = null
+
+[node name="Wood_Fence_11" type="MeshInstance" parent="Walls"]
+transform = Transform( -0.307512, 0, -0.394254, 0, 0.5, 0, 0.394254, 0, -0.307512, 26.6824, 3.60136, -23.6679 )
+mesh = ExtResource( 8 )
+material/0 = null
+
+[node name="Wood_Fence_12" type="MeshInstance" parent="Walls"]
+transform = Transform( -0.307512, 0, -0.394254, 0, 0.5, 0, 0.394254, 0, -0.307512, 25.4996, 3.60136, -24.5904 )
+mesh = ExtResource( 8 )
+material/0 = null
+
+[node name="Wood_Fence_13" type="MeshInstance" parent="Walls"]
+transform = Transform( -0.307512, 0, -0.394254, 0, 0.5, 0, 0.394254, 0, -0.307512, 24.3169, 3.60136, -25.513 )
+mesh = ExtResource( 8 )
+material/0 = null
+
+[node name="Village" type="Spatial" parent="."]
+editor/display_folded = true
+
+[node name="House1" type="MeshInstance" parent="Village"]
+editor/display_folded = true
+transform = Transform( 9.2844, 0, 7.85422, 0, 7, 0, -11.7813, 0, 6.1896, -43.4694, -0.392776, -12.8501 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="wallWindowGlass" type="MeshInstance" parent="Village/House1"]
+transform = Transform( 0.0584626, 0, 0.665526, 0, 0.999999, 0, -1.49743, 0, 0.0584628, -0.17557, 0.00267732, 1.15895 )
+mesh = ExtResource( 10 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="wallWoodDoor" type="MeshInstance" parent="Village/House1"]
+transform = Transform( 0.00474619, 0, -0.133249, 0, 0.714286, 0, 0.199873, 0, 0.00711928, 0.283546, 0.0145054, 0.394922 )
+mesh = ExtResource( 11 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="roofHighGableTop" type="MeshInstance" parent="Village/House1"]
+transform = Transform( 0.999991, 0, -0.0051094, 0, 1, 0, 0.0042578, 0, 1.19999, 0.00879252, 0.942852, 0.0203314 )
+mesh = ExtResource( 12 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="House3" type="MeshInstance" parent="Village"]
+editor/display_folded = true
+transform = Transform( 13.1453, 0, 4.81668, 0, 7, 0, -7.22502, 0, 8.76354, -29.4359, -0.392776, -26.5102 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="wallWindowGlass" type="MeshInstance" parent="Village/House3"]
+transform = Transform( 0.0584626, 0, 0.665526, 0, 0.999999, 0, -1.49743, 0, 0.0584628, -0.17557, 0.00267732, 1.15895 )
+mesh = ExtResource( 10 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="wallWoodDoor" type="MeshInstance" parent="Village/House3"]
+transform = Transform( 0.00474619, 0, -0.133249, 0, 0.714286, 0, 0.199873, 0, 0.00711928, 0.283546, 0.0145054, 0.394922 )
+mesh = ExtResource( 11 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="roofHighGableTop" type="MeshInstance" parent="Village/House3"]
+transform = Transform( 0.999991, 0, -0.0051094, 0, 1, 0, 0.0042578, 0, 1.19999, 0.0087924, 0.942852, 0.0203314 )
+mesh = ExtResource( 12 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="House4" type="MeshInstance" parent="Village"]
+editor/display_folded = true
+transform = Transform( -11.7168, 0, 6.24383, 0, 7, 0, -9.36574, 0, -7.81119, -25.4095, -0.392776, 22.5196 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="wallWindowGlass" type="MeshInstance" parent="Village/House4"]
+transform = Transform( 0.0584626, 0, 0.665526, 0, 0.999999, 0, -1.49743, 0, 0.0584628, -0.17557, 0.00267732, 1.15895 )
+mesh = ExtResource( 10 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="wallWoodDoor" type="MeshInstance" parent="Village/House4"]
+transform = Transform( 0.00474619, 0, -0.133249, 0, 0.714286, 0, 0.199873, 0, 0.00711928, 0.283546, 0.0145054, 0.394922 )
+mesh = ExtResource( 11 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="roofHighGableTop" type="MeshInstance" parent="Village/House4"]
+transform = Transform( 0.999991, 0, -0.0051094, 0, 1, 0, 0.0042578, 0, 1.19999, 0.00879252, 0.942852, 0.0203314 )
+mesh = ExtResource( 12 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="House2" type="MeshInstance" parent="Village"]
+editor/display_folded = true
+transform = Transform( -7.17015, 0, 8.78354, 0, 7, 0, -13.1753, 0, -4.7801, -42.0835, -0.392776, 7.21519 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="wallWindowGlass" type="MeshInstance" parent="Village/House2"]
+transform = Transform( 0.0584626, 0, 0.665526, 0, 0.999999, 0, -1.49743, 0, 0.0584628, -0.17557, 0.00267732, 1.15895 )
+mesh = ExtResource( 10 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="wallWoodDoor" type="MeshInstance" parent="Village/House2"]
+transform = Transform( 0.00474619, 0, -0.133249, 0, 0.714286, 0, 0.199873, 0, 0.00711928, 0.283546, 0.0145054, 0.394922 )
+mesh = ExtResource( 11 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="roofHighGableTop" type="MeshInstance" parent="Village/House2"]
+transform = Transform( 0.999991, 0, -0.0051094, 0, 1, 0, 0.0042578, 0, 1.19999, 0.00879252, 0.942852, 0.0203314 )
+mesh = ExtResource( 12 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="cartHigh" type="MeshInstance" parent="Village"]
+transform = Transform( -4.96437, 0, -0.595848, 0, 5, 0, 0.595848, 0, -4.96437, -9.8912, -0.377403, -29.9135 )
+mesh = ExtResource( 13 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+
+[node name="stallGreen" type="MeshInstance" parent="Village"]
+transform = Transform( -1.06667, 0, -4.8849, 0, 5, 0, 4.8849, 0, -1.06667, -15.1475, -0.070529, -25.2625 )
+mesh = ExtResource( 14 )
+material/0 = null
+material/1 = null
+
+[node name="stallGreen2" type="MeshInstance" parent="Village"]
+transform = Transform( 4.68786, 0, 1.73896, 0, 5, 0, -1.73896, 0, 4.68786, -5.68189, -0.070529, -19.4608 )
+mesh = ExtResource( 14 )
+material/0 = null
+material/1 = null
+
+[node name="bannerGreen" type="MeshInstance" parent="Village"]
+transform = Transform( 6, 0, 0, 0, 6, 0, 0, 0, 8, 1.48336, 1.37745, -21.8354 )
+mesh = ExtResource( 15 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="bannerGreen2" type="MeshInstance" parent="Village"]
+transform = Transform( 6, 0, 0, 0, 6, 0, 0, 0, 8, 1.48336, 1.37745, 1.21033 )
+mesh = ExtResource( 15 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="StaticBody" type="StaticBody" parent="Village"]
+editor/display_folded = true
+
+[node name="CollisionShape" type="CollisionShape" parent="Village/StaticBody"]
+transform = Transform( 0.616087, 0, 0.787678, 0, 1, 0, -0.787678, 0, 0.616087, -25.1501, -0.0427887, 22.0751 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="Village/StaticBody"]
+transform = Transform( 0.872415, 0, 0.488766, 0, 1, 0, -0.488766, 0, 0.872415, -41.7658, 5.08469, 6.89235 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="Village/StaticBody"]
+transform = Transform( 0.786961, 0, -0.617003, 0, 1, 0, 0.617003, 0, 0.786961, -43.2479, 5.08469, -13.0022 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape4" type="CollisionShape" parent="Village/StaticBody"]
+transform = Transform( 0.493492, 0, -0.869751, 0, 1, 0, 0.869751, 0, 0.493492, -28.7602, 5.08469, -26.2278 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape5" type="CollisionShape" parent="Village/StaticBody"]
+transform = Transform( 0.341959, 0, -0.939715, 0, 1, 0, 0.939715, 0, 0.341959, -5.76973, 0, -19.3654 )
+shape = SubResource( 6 )
+
+[node name="CollisionShape6" type="CollisionShape" parent="Village/StaticBody"]
+transform = Transform( 0.962927, 0, -0.269761, 0, 1, 0, 0.269761, 0, 0.962927, -15.3089, 0, -25.1154 )
+shape = SubResource( 6 )
+
+[node name="CollisionShape7" type="CollisionShape" parent="Village/StaticBody"]
+transform = Transform( 0.0952451, 0, -0.995454, 0, 1, 0, 0.995454, 0, 0.0952451, -9.59065, 0, -29.6985 )
+shape = SubResource( 6 )
+
+[node name="Boundry" type="Spatial" parent="."]
+editor/display_folded = true
+
+[node name="StaticBody" type="StaticBody" parent="Boundry"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Boundry/StaticBody"]
+transform = Transform( 0.616529, 0, -0.787332, 0, 1, 0, 0.787332, 0, 0.616529, -17.0291, 42, 58.1386 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="Boundry/StaticBody"]
+transform = Transform( 0.787332, 0, 0.616529, 0, 1, 0, -0.616529, 0, 0.787332, 15, 42, -74 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="Boundry/StaticBody"]
+transform = Transform( 0.787332, 0, 0.616529, 0, 1, 0, -0.616529, 0, 0.787332, 148.218, 41.7987, 69 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape4" type="CollisionShape" parent="Boundry/StaticBody"]
+transform = Transform( 0.795371, 0, 0.606124, 0, 1, 0, -0.606124, 0, 0.795371, 127.263, 52.6763, -79.9691 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape5" type="CollisionShape" parent="Boundry/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.82902, 0, 41.2177 )
+shape = SubResource( 9 )
+
+[node name="CollisionShape6" type="CollisionShape" parent="Boundry/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8677, 0, -61.2652 )
+shape = SubResource( 9 )
+
+[node name="Mountains" type="Spatial" parent="Boundry"]
+
+[node name="Brown_Cliff_Bottom_01" type="MeshInstance" parent="Boundry/Mountains"]
+transform = Transform( -7.82883, 0, -31.1084, 0, 50, 0, 6.22169, 0, -39.1441, -72.1127, 0.192398, -9.58584 )
+mesh = ExtResource( 16 )
+material/0 = null
+
+[node name="Brown_Cliff_Bottom_02" type="MeshInstance" parent="Boundry/Mountains"]
+transform = Transform( -6.20398, 0, 39.2144, 0, 50, 0, -7.84287, 0, -31.0199, 46.3469, 0.192398, -103.068 )
+mesh = ExtResource( 16 )
+material/0 = null
+
+[node name="Brown_Cliff_Bottom_03" type="MeshInstance" parent="Boundry/Mountains"]
+transform = Transform( -5.79864, 0, 40.7357, 0, 50, 0, -8.14713, 0, -28.9932, 110.724, 0.192398, -148.316 )
+mesh = ExtResource( 16 )
+material/0 = null
+
+[node name="Brown_Cliff_Bottom_04" type="MeshInstance" parent="Boundry/Mountains"]
+transform = Transform( 7.96917, 0, 30.2045, 0, 50, 0, -6.04089, 0, 39.8458, 165.484, 0.284073, -24.1018 )
+mesh = ExtResource( 16 )
+material/0 = null
+
+[node name="Brown_Cliff_Bottom_05" type="MeshInstance" parent="Boundry/Mountains"]
+transform = Transform( 6.08368, 0, -39.6827, 0, 50, 0, 7.93655, 0, 30.4184, 47.8437, -7.92029, 149.165 )
+mesh = ExtResource( 16 )
+material/0 = null
+
+[node name="Brown_Cliff_Bottom_07" type="MeshInstance" parent="Boundry/Mountains"]
+transform = Transform( 6.08368, 0, -39.6827, 0, 50, 0, 7.93655, 0, 30.4184, 165.899, -7.9203, 59.059 )
+mesh = ExtResource( 16 )
+material/0 = null
+
+[node name="Brown_Cliff_Bottom_06" type="MeshInstance" parent="Boundry/Mountains"]
+transform = Transform( -7.70492, 0, -31.8725, 0, 50, 0, 6.37449, 0, -38.5246, 16.7422, -1.08743, 102.333 )
+mesh = ExtResource( 16 )
+material/0 = null
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 17 )
+pitch_scale = 0.5
+autoplay = true
+mix_target = 2
+script = ExtResource( 18 )
+
+[node name="Wild" type="Spatial" parent="."]
+editor/display_folded = true
+
+[node name="Trees" type="Spatial" parent="Wild"]
+
+[node name="Potion" parent="." instance=ExtResource( 19 )]
+
+[node name="CoinBag" parent="." instance=ExtResource( 20 )]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -10.4027, 0.914571, -4.34072 )

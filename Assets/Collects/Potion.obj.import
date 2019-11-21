@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Potion.obj-152eb5bc95de0ea4966164b76bf63b84.mesh"
+
+[deps]
+
+files=[ "res://.import/Potion.obj-152eb5bc95de0ea4966164b76bf63b84.mesh" ]
+
+source_file="res://Assets/Collects/Potion.obj"
+dest_files=[ "res://.import/Potion.obj-152eb5bc95de0ea4966164b76bf63b84.mesh", "res://.import/Potion.obj-152eb5bc95de0ea4966164b76bf63b84.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true
