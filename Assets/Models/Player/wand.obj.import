@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/wand.obj-a4e5329af0edad7b1b2ec57c8faa56ff.mesh"
+
+[deps]
+
+files=[ "res://.import/wand.obj-a4e5329af0edad7b1b2ec57c8faa56ff.mesh" ]
+
+source_file="res://Assets/Models/Player/wand.obj"
+dest_files=[ "res://.import/wand.obj-a4e5329af0edad7b1b2ec57c8faa56ff.mesh", "res://.import/wand.obj-a4e5329af0edad7b1b2ec57c8faa56ff.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

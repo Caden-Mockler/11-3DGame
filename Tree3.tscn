@@ -1,0 +1,901 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://Assets/Models/Forest/Models/naturePack_072.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Assets/Models/Forest/Models/naturePack_071.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://Assets/Models/Forest/Models/naturePack_073.obj" type="ArrayMesh" id=3]
+[ext_resource path="res://Assets/Models/Forest/Models/naturePack_070.obj" type="ArrayMesh" id=4]
+[ext_resource path="res://Assets/Models/Forest/Models/naturePack_065.obj" type="ArrayMesh" id=5]
+[ext_resource path="res://Assets/Models/Forest/Models/naturePack_063.obj" type="ArrayMesh" id=6]
+[ext_resource path="res://Assets/Models/Forest/Models/naturePack_062.obj" type="ArrayMesh" id=7]
+[ext_resource path="res://Assets/Models/Forest/Models/naturePack_052.obj" type="ArrayMesh" id=8]
+[ext_resource path="res://Assets/Models/Forest/Models/Large_Oak_Green_01.obj" type="ArrayMesh" id=9]
+[ext_resource path="res://Assets/Models/Forest/Models/naturePack_033.obj" type="ArrayMesh" id=10]
+[ext_resource path="res://Assets/Models/Forest/Models/naturePack_038.obj" type="ArrayMesh" id=11]
+
+[sub_resource type="CylinderShape" id=1]
+radius = 1.84498
+height = 3.5072
+
+[sub_resource type="CylinderShape" id=2]
+radius = 1.21053
+height = 3.31421
+
+[sub_resource type="CylinderShape" id=3]
+height = 3.12669
+
+[sub_resource type="CylinderShape" id=4]
+radius = 1.24505
+height = 3.92639
+
+[node name="Tree3" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0998154, 0.0309229, 0.0748358 )
+
+[node name="naturePack_072" type="MeshInstance" parent="."]
+editor/display_folded = true
+transform = Transform( 0.148138, 0, 0.988967, 0, 1, 0, -0.988967, 0, 0.148138, 32.9671, -1.05631, -0.306437 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="naturePack_071" type="MeshInstance" parent="naturePack_072"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.68753, 0.435905, -5.45465 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="naturePack_072" type="MeshInstance" parent="naturePack_072"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.251997, -0.11227, 6.58579 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="naturePack_073" type="MeshInstance" parent="naturePack_072"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.106781, -0.312673, -11.6054 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+material/23 = null
+material/24 = null
+material/25 = null
+material/26 = null
+material/27 = null
+material/28 = null
+material/29 = null
+material/30 = null
+material/31 = null
+material/32 = null
+material/33 = null
+material/34 = null
+material/35 = null
+material/36 = null
+material/37 = null
+material/38 = null
+material/39 = null
+material/40 = null
+material/41 = null
+
+[node name="naturePack_071" type="MeshInstance" parent="naturePack_072/naturePack_073"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.1494, 1.3957, 10.1872 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="naturePack_070" type="MeshInstance" parent="naturePack_072/naturePack_073/naturePack_071"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.35503, -0.570097, -9.83198 )
+mesh = ExtResource( 4 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="naturePack_072" type="MeshInstance" parent="naturePack_072/naturePack_073"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.1494, 0.19706, 24.1368 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="naturePack_070" type="MeshInstance" parent="naturePack_072/naturePack_073/naturePack_072"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.366, 0.106109, -9.87694 )
+mesh = ExtResource( 4 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="StaticBody" type="StaticBody" parent="naturePack_072"]
+editor/display_folded = true
+
+[node name="CollisionShape" type="CollisionShape" parent="naturePack_072/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.47653, 1.81383, -1.46636 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape5" type="CollisionShape" parent="naturePack_072/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.1813, 2.26677, 1.27238 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape6" type="CollisionShape" parent="naturePack_072/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9911, 2.13289, -2.43703 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape7" type="CollisionShape" parent="naturePack_072/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.1366, 2.502, -12.4529 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape8" type="CollisionShape" parent="naturePack_072/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9169, 1.76164, 11.053 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape4" type="CollisionShape" parent="naturePack_072/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.05915, 1.52, -6.96416 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="naturePack_072/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.47653, 1.52, 5.52843 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="naturePack_072/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.971196, 1.52, -12.9491 )
+shape = SubResource( 1 )
+
+[node name="naturePack_075" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.99634, -0.865925, 10.0398 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="naturePack_071" type="MeshInstance" parent="naturePack_075"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.68753, 0.435905, -5.45465 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="naturePack_072" type="MeshInstance" parent="naturePack_075"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.251997, -0.11227, 6.58579 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="naturePack_073" type="MeshInstance" parent="naturePack_075"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.106781, -0.312673, -11.6054 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+material/23 = null
+material/24 = null
+material/25 = null
+material/26 = null
+material/27 = null
+material/28 = null
+material/29 = null
+material/30 = null
+material/31 = null
+material/32 = null
+material/33 = null
+material/34 = null
+material/35 = null
+material/36 = null
+material/37 = null
+material/38 = null
+material/39 = null
+material/40 = null
+material/41 = null
+
+[node name="naturePack_071" type="MeshInstance" parent="naturePack_075/naturePack_073"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.1494, -1.47447, 10.1872 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="naturePack_070" type="MeshInstance" parent="naturePack_075/naturePack_073/naturePack_071"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.35503, -0.692115, -9.83198 )
+mesh = ExtResource( 4 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="naturePack_072" type="MeshInstance" parent="naturePack_075/naturePack_073"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.1494, 0.19706, 24.1368 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="naturePack_070" type="MeshInstance" parent="naturePack_075/naturePack_073/naturePack_072"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.366, -1.66133, -9.87694 )
+mesh = ExtResource( 4 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="StaticBody" type="StaticBody" parent="naturePack_075"]
+
+[node name="CollisionShape" type="CollisionShape" parent="naturePack_075/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.47653, 1.81383, -1.46636 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape5" type="CollisionShape" parent="naturePack_075/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.1813, 0.150679, 1.27238 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape6" type="CollisionShape" parent="naturePack_075/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9911, -0.186746, -2.43703 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape7" type="CollisionShape" parent="naturePack_075/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.1366, 0.0814809, -12.4529 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape8" type="CollisionShape" parent="naturePack_075/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9169, 1.76164, 11.053 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape4" type="CollisionShape" parent="naturePack_075/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.05915, 1.52, -6.96416 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="naturePack_075/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.47653, 1.52, 5.52843 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="naturePack_075/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.971196, 1.52, -12.9491 )
+shape = SubResource( 1 )
+
+[node name="naturePack_073" type="MeshInstance" parent="."]
+editor/display_folded = true
+transform = Transform( -0.171449, 0, 0.985193, 0, 1, 0, -0.985193, 0, -0.171449, -12.9979, -1.05631, -23.5552 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="naturePack_071" type="MeshInstance" parent="naturePack_073"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.68753, 0.435905, -5.45465 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="naturePack_072" type="MeshInstance" parent="naturePack_073"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.251997, -0.11227, 6.58579 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="naturePack_073" type="MeshInstance" parent="naturePack_073"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.106781, -0.312673, -11.6054 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+material/23 = null
+material/24 = null
+material/25 = null
+material/26 = null
+material/27 = null
+material/28 = null
+material/29 = null
+material/30 = null
+material/31 = null
+material/32 = null
+material/33 = null
+material/34 = null
+material/35 = null
+material/36 = null
+material/37 = null
+material/38 = null
+material/39 = null
+material/40 = null
+material/41 = null
+
+[node name="naturePack_071" type="MeshInstance" parent="naturePack_073/naturePack_073"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.1494, 1.3957, 10.1872 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="naturePack_070" type="MeshInstance" parent="naturePack_073/naturePack_073/naturePack_071"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.35503, -0.570097, -9.83198 )
+mesh = ExtResource( 4 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="naturePack_072" type="MeshInstance" parent="naturePack_073/naturePack_073"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.1494, 0.19706, 24.1368 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="naturePack_070" type="MeshInstance" parent="naturePack_073/naturePack_073/naturePack_072"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.366, 0.106109, -9.87694 )
+mesh = ExtResource( 4 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="StaticBody" type="StaticBody" parent="naturePack_073"]
+editor/display_folded = true
+
+[node name="CollisionShape" type="CollisionShape" parent="naturePack_073/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.47653, 1.81383, -1.46636 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape5" type="CollisionShape" parent="naturePack_073/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.1813, 2.26677, 1.27238 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape6" type="CollisionShape" parent="naturePack_073/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9911, 2.13289, -2.43703 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape7" type="CollisionShape" parent="naturePack_073/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.1366, 2.502, -12.4529 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape8" type="CollisionShape" parent="naturePack_073/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9169, 1.76164, 11.053 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape4" type="CollisionShape" parent="naturePack_073/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.05915, 1.52, -6.96416 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="naturePack_073/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.47653, 1.52, 5.52843 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="naturePack_073/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.971196, 1.52, -12.9491 )
+shape = SubResource( 1 )
+
+[node name="naturePack_074" type="MeshInstance" parent="."]
+editor/display_folded = true
+transform = Transform( -0.171449, 0, 0.985193, 0, 1, 0, -0.985193, 0, -0.171449, 17.8549, -1.05631, -23.5552 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="naturePack_071" type="MeshInstance" parent="naturePack_074"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.68753, 0.435905, -5.45465 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="naturePack_072" type="MeshInstance" parent="naturePack_074"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.251997, -0.11227, 6.58579 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="naturePack_073" type="MeshInstance" parent="naturePack_074"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.106781, -0.312673, -11.6054 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+material/23 = null
+material/24 = null
+material/25 = null
+material/26 = null
+material/27 = null
+material/28 = null
+material/29 = null
+material/30 = null
+material/31 = null
+material/32 = null
+material/33 = null
+material/34 = null
+material/35 = null
+material/36 = null
+material/37 = null
+material/38 = null
+material/39 = null
+material/40 = null
+material/41 = null
+
+[node name="naturePack_071" type="MeshInstance" parent="naturePack_074/naturePack_073"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.1494, 1.3957, 10.1872 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="naturePack_070" type="MeshInstance" parent="naturePack_074/naturePack_073/naturePack_071"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.35503, -0.570097, -9.83198 )
+mesh = ExtResource( 4 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="naturePack_072" type="MeshInstance" parent="naturePack_074/naturePack_073"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.1494, 0.19706, 24.1368 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="naturePack_070" type="MeshInstance" parent="naturePack_074/naturePack_073/naturePack_072"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.366, 0.106109, -9.87694 )
+mesh = ExtResource( 4 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="StaticBody" type="StaticBody" parent="naturePack_074"]
+editor/display_folded = true
+
+[node name="CollisionShape" type="CollisionShape" parent="naturePack_074/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.47653, 1.81383, -1.46636 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape5" type="CollisionShape" parent="naturePack_074/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.1813, 2.26677, 1.27238 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape6" type="CollisionShape" parent="naturePack_074/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9911, 2.13289, -2.43703 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape7" type="CollisionShape" parent="naturePack_074/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.1366, 2.502, -12.4529 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape8" type="CollisionShape" parent="naturePack_074/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9169, 1.76164, 11.053 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape4" type="CollisionShape" parent="naturePack_074/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.05915, 1.52, -6.96416 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="naturePack_074/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.47653, 1.52, 5.52843 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="naturePack_074/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.971196, 1.52, -12.9491 )
+shape = SubResource( 1 )
+
+[node name="naturePack_065" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.73919, -0.503664, -8.24695 )
+mesh = ExtResource( 5 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="naturePack_063" type="MeshInstance" parent="naturePack_065"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.7034, -0.408097, 1.9119 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+
+[node name="naturePack_062" type="MeshInstance" parent="naturePack_065/naturePack_063"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.51076, 0.0288923, 21.0287 )
+mesh = ExtResource( 7 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+
+[node name="StaticBody" type="StaticBody" parent="naturePack_065"]
+
+[node name="CollisionShape" type="CollisionShape" parent="naturePack_065/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5635, 1.0144, -1.28436 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="naturePack_065/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.3601, 1.15593, 0.462416 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="naturePack_065/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.721, 1.52703, 21.6823 )
+shape = SubResource( 2 )
+
+[node name="naturePack_066" type="MeshInstance" parent="."]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.73919, -0.503664, -32.1566 )
+mesh = ExtResource( 5 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="naturePack_063" type="MeshInstance" parent="naturePack_066"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.7034, -0.408097, 1.9119 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+
+[node name="naturePack_062" type="MeshInstance" parent="naturePack_066/naturePack_063"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.57253, 0.640947, 20.9464 )
+mesh = ExtResource( 7 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+
+[node name="StaticBody" type="StaticBody" parent="naturePack_066"]
+
+[node name="CollisionShape" type="CollisionShape" parent="naturePack_066/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5635, 1.0144, -1.28436 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="naturePack_066/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.3601, 1.15593, 0.462416 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="naturePack_066/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.721, 1.52703, 21.6823 )
+shape = SubResource( 2 )
+
+[node name="naturePack_052" type="MeshInstance" parent="."]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.4929, -0.839941, 2.47822 )
+mesh = ExtResource( 8 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="StaticBody" type="StaticBody" parent="naturePack_052"]
+
+[node name="CollisionShape" type="CollisionShape" parent="naturePack_052/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.04359, 1.06494, -1.03644 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="naturePack_052/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.59754, 1.06494, 19.0689 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="naturePack_052/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.3834, 1.79848, 4.60618 )
+shape = SubResource( 3 )
+
+[node name="naturePack_053" type="MeshInstance" parent="naturePack_052"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.690874, 0, 20.1604 )
+mesh = ExtResource( 8 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="Large_Oak_Green_01" type="MeshInstance" parent="naturePack_052"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.8935, 0.422813, 5.9096 )
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+
+[node name="naturePack_033" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.43112, -0.854737, 0.0509696 )
+mesh = ExtResource( 10 )
+material/0 = null
+
+[node name="naturePack_038" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.493048, -0.423379, -12.381 )
+mesh = ExtResource( 11 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+
+[node name="StaticBody" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.79274, 1.28453, -0.752159 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.00276, 1.28453, -12.8779 )
+shape = SubResource( 4 )

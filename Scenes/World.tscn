@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=65 format=2]
 
 [ext_resource path="res://Scenes/World.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Models/Forest/More/Models/OBJ format/ground_dirt.obj" type="ArrayMesh" id=2]
@@ -16,10 +16,33 @@
 [ext_resource path="res://Assets/Models/Village/Fantasy+/stallGreen.obj" type="ArrayMesh" id=14]
 [ext_resource path="res://Assets/Models/Village/Fantasy+/bannerGreen.obj" type="ArrayMesh" id=15]
 [ext_resource path="res://Assets/Models/Forest/Models/Brown_Cliff_Bottom_01.obj" type="ArrayMesh" id=16]
-[ext_resource path="res://SFX/2013-02-20_A_Heros_Defeat_-_David_Fesliyan.wav" type="AudioStream" id=17]
-[ext_resource path="res://Scenes/AudioStreamPlayer.gd" type="Script" id=18]
-[ext_resource path="res://Scenes/Potion.tscn" type="PackedScene" id=19]
-[ext_resource path="res://CoinBag.tscn" type="PackedScene" id=20]
+[ext_resource path="res://Assets/Models/Forest/Models/naturePack_075.obj" type="ArrayMesh" id=17]
+[ext_resource path="res://SFX/2013-02-20_A_Heros_Defeat_-_David_Fesliyan.wav" type="AudioStream" id=18]
+[ext_resource path="res://Scenes/AudioStreamPlayer.gd" type="Script" id=19]
+[ext_resource path="res://Tree1.tscn" type="PackedScene" id=20]
+[ext_resource path="res://Tree2.tscn" type="PackedScene" id=21]
+[ext_resource path="res://Assets/Models/Forest/Models/Brown_Waterfall_01.obj" type="ArrayMesh" id=22]
+[ext_resource path="res://Assets/Models/Forest/Models/Campfire_01.obj" type="ArrayMesh" id=23]
+[ext_resource path="res://Assets/Models/Forest/Models/Fallen_Trunk_01.obj" type="ArrayMesh" id=24]
+[ext_resource path="res://Assets/Models/Forest/Models/Grass_01.obj" type="ArrayMesh" id=25]
+[ext_resource path="res://Assets/Models/Forest/Models/naturePack_027.obj" type="ArrayMesh" id=26]
+[ext_resource path="res://Assets/Models/Forest/Models/naturePack_028.obj" type="ArrayMesh" id=27]
+[ext_resource path="res://Assets/Models/Forest/Models/naturePack_029.obj" type="ArrayMesh" id=28]
+[ext_resource path="res://Assets/Models/Forest/Models/naturePack_023.obj" type="ArrayMesh" id=29]
+[ext_resource path="res://Assets/Models/Forest/Models/naturePack_032.obj" type="ArrayMesh" id=30]
+[ext_resource path="res://Assets/Models/Forest/Models/naturePack_flat_009.obj" type="ArrayMesh" id=31]
+[ext_resource path="res://Assets/Models/Forest/Models/naturePack_173.obj" type="ArrayMesh" id=32]
+[ext_resource path="res://Assets/Models/Forest/Models/naturePack_166.obj" type="ArrayMesh" id=33]
+[ext_resource path="res://Tree3.tscn" type="PackedScene" id=34]
+[ext_resource path="res://Assets/Models/Forest/More/Models/OBJ format/stone_obelisk.obj" type="ArrayMesh" id=35]
+[ext_resource path="res://Assets/Models/Forest/More/Models/OBJ format/tent_detailedOpen.obj" type="ArrayMesh" id=36]
+[ext_resource path="res://Scenes/Potion.tscn" type="PackedScene" id=37]
+[ext_resource path="res://CoinBag.tscn" type="PackedScene" id=38]
+[ext_resource path="res://Assets/Models/Forest/More/Models/OBJ format/logs_stackLarge.obj" type="ArrayMesh" id=39]
+[ext_resource path="res://Assets/Models/Forest/More/Models/OBJ format/logs_stack.obj" type="ArrayMesh" id=40]
+[ext_resource path="res://Assets/Models/Village/Castle/Models/knightBlue.obj" type="ArrayMesh" id=41]
+[ext_resource path="res://Assets/Models/Village/Castle/Models/king.obj" type="ArrayMesh" id=42]
+[ext_resource path="res://Assets/Hero (3)-page-001.jpg" type="Texture" id=43]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_color = Color( 0.286275, 0.313726, 0.341176, 1 )
@@ -49,6 +72,45 @@ extents = Vector3( 7.96716, 66.5838, 67.4285 )
 [sub_resource type="BoxShape" id=9]
 extents = Vector3( 3.66025, 10.549, 45.7117 )
 
+[sub_resource type="CylinderMesh" id=10]
+
+[sub_resource type="SpatialMaterial" id=11]
+flags_transparent = true
+albedo_color = Color( 0.627451, 0.843137, 0.960784, 1 )
+metallic = 1.0
+metallic_specular = 0.0
+roughness = 0.71
+
+[sub_resource type="BoxShape" id=12]
+extents = Vector3( 3.75903, 3.83097, 3.61626 )
+
+[sub_resource type="BoxShape" id=13]
+extents = Vector3( 1.31757, 1, 0.555717 )
+
+[sub_resource type="BoxShape" id=14]
+extents = Vector3( 16.4693, 8.79764, 15.3855 )
+
+[sub_resource type="BoxShape" id=15]
+extents = Vector3( 1.92747, 1.70595, 1.96419 )
+
+[sub_resource type="CylinderShape" id=16]
+
+[sub_resource type="BoxShape" id=17]
+extents = Vector3( 6.48367, 3.37421, 4.49119 )
+
+[sub_resource type="BoxShape" id=18]
+
+[sub_resource type="SpatialMaterial" id=19]
+flags_transparent = true
+
+[sub_resource type="CubeMesh" id=20]
+material = SubResource( 19 )
+size = Vector3( 3, 3, 3 )
+
+[sub_resource type="SpatialMaterial" id=21]
+flags_transparent = true
+albedo_texture = ExtResource( 43 )
+
 [node name="World" type="Spatial"]
 script = ExtResource( 1 )
 
@@ -64,7 +126,7 @@ editor/display_folded = true
 transform = Transform( -0.615024, 0, 0.788508, 0, 1, 0, -0.788508, 0, -0.615024, 70.4656, 0, 3.48462 )
 
 [node name="MeshInstance" type="MeshInstance" parent="Ground"]
-transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -1.58596, -0.202717, -0.375072 )
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -1.58596, -0.202717, -0.375069 )
 mesh = SubResource( 2 )
 material/0 = SubResource( 3 )
 
@@ -436,9 +498,9 @@ transform = Transform( 0.0952451, 0, -0.995454, 0, 1, 0, 0.995454, 0, 0.0952451,
 shape = SubResource( 6 )
 
 [node name="Boundry" type="Spatial" parent="."]
-editor/display_folded = true
 
 [node name="StaticBody" type="StaticBody" parent="Boundry"]
+editor/display_folded = true
 
 [node name="CollisionShape" type="CollisionShape" parent="Boundry/StaticBody"]
 transform = Transform( 0.616529, 0, -0.787332, 0, 1, 0, 0.787332, 0, 0.616529, -17.0291, 42, 58.1386 )
@@ -446,6 +508,10 @@ shape = SubResource( 7 )
 
 [node name="CollisionShape2" type="CollisionShape" parent="Boundry/StaticBody"]
 transform = Transform( 0.787332, 0, 0.616529, 0, 1, 0, -0.616529, 0, 0.787332, 15, 42, -74 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape7" type="CollisionShape" parent="Boundry/StaticBody"]
+transform = Transform( 0.623107, 0, -0.782136, 0, 1, 0, 0.782136, 0, 0.623107, 135.942, 42, -63.2342 )
 shape = SubResource( 7 )
 
 [node name="CollisionShape3" type="CollisionShape" parent="Boundry/StaticBody"]
@@ -487,12 +553,17 @@ mesh = ExtResource( 16 )
 material/0 = null
 
 [node name="Brown_Cliff_Bottom_05" type="MeshInstance" parent="Boundry/Mountains"]
-transform = Transform( 6.08368, 0, -39.6827, 0, 50, 0, 7.93655, 0, 30.4184, 47.8437, -7.92029, 149.165 )
+transform = Transform( 6.08368, 0, -39.6827, 0, 50, 0, 7.93655, 0, 30.4184, 48.9145, -7.92029, 149.008 )
 mesh = ExtResource( 16 )
 material/0 = null
 
 [node name="Brown_Cliff_Bottom_07" type="MeshInstance" parent="Boundry/Mountains"]
-transform = Transform( 6.08368, 0, -39.6827, 0, 50, 0, 7.93655, 0, 30.4184, 165.899, -7.9203, 59.059 )
+transform = Transform( 6.08368, 0, -39.6827, 0, 50, 0, 7.93655, 0, 30.4184, 165.899, -11.2541, 59.059 )
+mesh = ExtResource( 16 )
+material/0 = null
+
+[node name="Brown_Cliff_Bottom_08" type="MeshInstance" parent="Boundry/Mountains"]
+transform = Transform( 8.02848, 0, 29.8092, 0, 50, 0, -5.96183, 0, 40.1424, 227.588, -11.2541, 59.059 )
 mesh = ExtResource( 16 )
 material/0 = null
 
@@ -501,19 +572,307 @@ transform = Transform( -7.70492, 0, -31.8725, 0, 50, 0, 6.37449, 0, -38.5246, 16
 mesh = ExtResource( 16 )
 material/0 = null
 
+[node name="naturePack_075" type="MeshInstance" parent="Boundry/Mountains"]
+transform = Transform( -0.977963, 0, -1.74459, 0, 1.5, 0, 1.74459, 0, -0.977963, 118.282, -0.202717, 35.9477 )
+mesh = ExtResource( 17 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 17 )
+stream = ExtResource( 18 )
 pitch_scale = 0.5
 autoplay = true
 mix_target = 2
-script = ExtResource( 18 )
+script = ExtResource( 19 )
 
 [node name="Wild" type="Spatial" parent="."]
 editor/display_folded = true
 
-[node name="Trees" type="Spatial" parent="Wild"]
+[node name="Tree" parent="Wild" instance=ExtResource( 20 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 52.1018, 0, 33.782 )
 
-[node name="Potion" parent="." instance=ExtResource( 19 )]
+[node name="Tree6" parent="Wild" instance=ExtResource( 20 )]
+transform = Transform( 1.612, 0, -1.18382, 0, 2, 0, 1.18382, 0, 1.612, 130.399, 0, -38.4184 )
 
-[node name="CoinBag" parent="." instance=ExtResource( 20 )]
+[node name="Tree2" parent="Wild" instance=ExtResource( 20 )]
+transform = Transform( 0.963804, 0, -1.75245, 0, 2, 0, 1.75245, 0, 0.963804, 88.4077, 0, -110.788 )
+
+[node name="Tree3" parent="Wild" instance=ExtResource( 21 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 61.9792, 0, -62.9277 )
+
+[node name="Tree4" parent="Wild" instance=ExtResource( 21 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 133.884, 0, 20.1708 )
+
+[node name="Tree5" parent="Wild" instance=ExtResource( 21 )]
+transform = Transform( -1.47303, 0, -1.35285, 0, 2, 0, 1.35285, 0, -1.47303, 77.31, 0, 87.5634 )
+
+[node name="Brown_Waterfall_01" type="MeshInstance" parent="Wild"]
+transform = Transform( 20.43, 0, 11.5271, 0, 55, 0, -14.4089, 0, 16.344, 101.939, -10.2448, 113.863 )
+mesh = ExtResource( 22 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Lake" type="MeshInstance" parent="Wild"]
+transform = Transform( 20, 0, 0, 0, 1, 0, 0, 0, 20, 118.487, -1.12049, 72.8695 )
+mesh = SubResource( 10 )
+material/0 = SubResource( 11 )
+
+[node name="Lake2" type="MeshInstance" parent="Wild"]
+transform = Transform( 15, 0, 0, 0, 1, 0, 0, 0, 10, 135.245, -1.12049, 61.5063 )
+mesh = SubResource( 10 )
+material/0 = SubResource( 11 )
+
+[node name="Campfire_01" type="MeshInstance" parent="Wild"]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 127.259, -0.148211, 47.0381 )
+mesh = ExtResource( 23 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+
+[node name="Fallen_Trunk_01" type="MeshInstance" parent="Wild/Campfire_01"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.690277, -0.346122, -1.95154 )
+mesh = ExtResource( 24 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+
+[node name="Grass_01" type="MeshInstance" parent="Wild"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 130.668, -0.202717, 46.0463 )
+mesh = ExtResource( 25 )
+material/0 = null
+
+[node name="naturePack_027" type="MeshInstance" parent="Wild"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 132.222, -1.48816, 58.6485 )
+mesh = ExtResource( 26 )
+material/0 = null
+
+[node name="naturePack_028" type="MeshInstance" parent="Wild"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 130.695, -0.829502, 58.521 )
+mesh = ExtResource( 27 )
+material/0 = null
+
+[node name="naturePack_029" type="MeshInstance" parent="Wild"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 130.149, -0.422359, 56.7574 )
+mesh = ExtResource( 28 )
+material/0 = null
+
+[node name="naturePack_030" type="MeshInstance" parent="Wild"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 123.348, -0.141631, 61.1385 )
+mesh = ExtResource( 26 )
+material/0 = null
+
+[node name="naturePack_023" type="MeshInstance" parent="Wild"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 113.805, -0.456517, 63.1781 )
+mesh = ExtResource( 29 )
+material/0 = null
+
+[node name="naturePack_032" type="MeshInstance" parent="Wild"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 109.683, -0.414074, 63.2288 )
+mesh = ExtResource( 30 )
+material/0 = null
+
+[node name="naturePack_031" type="MeshInstance" parent="Wild"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 109.135, -0.365587, 70.1457 )
+mesh = ExtResource( 28 )
+material/0 = null
+
+[node name="naturePack_033" type="MeshInstance" parent="Wild"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 104.547, -0.559294, 71.6319 )
+mesh = ExtResource( 26 )
+material/0 = null
+
+[node name="naturePack_flat_009" type="MeshInstance" parent="Wild"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 96.8347, -0.219501, 78.6813 )
+mesh = ExtResource( 31 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+
+[node name="naturePack_173" type="MeshInstance" parent="Wild"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 103.415, -0.598303, 79.156 )
+mesh = ExtResource( 32 )
+material/0 = null
+
+[node name="naturePack_166" type="MeshInstance" parent="Wild"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 97.864, -0.496754, 81.7472 )
+mesh = ExtResource( 33 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+
+[node name="StaticBody" type="StaticBody" parent="Wild"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Wild/StaticBody"]
+transform = Transform( 0.851801, 0, -0.523866, 0, 1, 0, 0.523866, 0, 0.851801, 119.547, 0, 40.2779 )
+shape = SubResource( 12 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="Wild/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 127.892, 0, 44.6189 )
+shape = SubResource( 13 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="Wild/StaticBody"]
+transform = Transform( 0.901711, 0, 0.432339, 0, 1, 0, -0.432339, 0, 0.901711, 124.614, -4.21771, 74.2296 )
+shape = SubResource( 14 )
+
+[node name="CollisionShape4" type="CollisionShape" parent="Wild/StaticBody"]
+transform = Transform( 0.825312, 0, -0.564677, 0, 1, 0, 0.564677, 0, 0.825312, 135.417, 0, 47.2153 )
+shape = SubResource( 15 )
+
+[node name="Tree7" parent="Wild" instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 65.8393, 0.00262165, 0.0748358 )
+
+[node name="Tree8" parent="Wild" instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40.9928, -0.447193, 85.7069 )
+
+[node name="Tree9" parent="Wild" instance=ExtResource( 34 )]
+transform = Transform( 0.863554, 0, -0.504257, 0, 1, 0, 0.504257, 0, 0.863554, 98.8048, 0.669479, -73.4335 )
+
+[node name="stone_obelisk" type="MeshInstance" parent="Wild"]
+transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, 105.024, -0.602698, -34.2546 )
+mesh = ExtResource( 35 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Wild/stone_obelisk"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Wild/stone_obelisk/StaticBody"]
+transform = Transform( 1.25, 0, 0, 0, 5, 0, 0, 0, 1.25, 0.249634, 2.22338, -0.42748 )
+shape = SubResource( 16 )
+
+[node name="tent_detailedOpen" type="MeshInstance" parent="Wild"]
+transform = Transform( 0.306811, 0, 0.3948, 0, 0.5, 0, -0.3948, 0, 0.306811, 135.37, -0.362962, 47.317 )
+mesh = ExtResource( 36 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Potion" parent="." instance=ExtResource( 37 )]
+
+[node name="CoinBag" parent="." instance=ExtResource( 38 )]
 transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -10.4027, 0.914571, -4.34072 )
+
+[node name="logs_stackLarge" type="MeshInstance" parent="."]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.7861, -0.443772, -34.0688 )
+mesh = ExtResource( 39 )
+material/0 = null
+material/1 = null
+
+[node name="logs_stack" type="MeshInstance" parent="logs_stackLarge"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.465596, 3.57041, 0.111965 )
+mesh = ExtResource( 40 )
+material/0 = null
+material/1 = null
+
+[node name="StaticBody" type="StaticBody" parent="logs_stackLarge"]
+
+[node name="CollisionShape" type="CollisionShape" parent="logs_stackLarge/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.36659, 3.17377, 0 )
+shape = SubResource( 17 )
+
+[node name="logs_stackLarge2" type="MeshInstance" parent="logs_stackLarge"]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09222, 0, 0 )
+mesh = ExtResource( 39 )
+material/0 = null
+material/1 = null
+
+[node name="logs_stack" type="MeshInstance" parent="logs_stackLarge/logs_stackLarge2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.465596, 3.57041, 0.111965 )
+mesh = ExtResource( 40 )
+material/0 = null
+material/1 = null
+
+[node name="Characters" type="Spatial" parent="."]
+
+[node name="knightBlue" type="MeshInstance" parent="Characters"]
+transform = Transform( -0.454551, 0, -0.208287, 0, 0.75, 0, 0.208287, 0, -0.454551, -23.5385, -0.139693, -2.09734 )
+mesh = ExtResource( 41 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="knightBlue2" type="MeshInstance" parent="Characters"]
+transform = Transform( -0.499562, 0, 0.0209155, 0, 0.75, 0, -0.0209155, 0, -0.499562, -16.2267, -0.139693, -4.41123 )
+mesh = ExtResource( 41 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="king" type="MeshInstance" parent="Characters"]
+transform = Transform( -0.454551, 0, -0.208287, 0, 0.5, 0, 0.208287, 0, -0.454551, -19.7054, 0.149673, -1.69053 )
+mesh = ExtResource( 42 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="StaticBody" type="StaticBody" parent="Characters/king"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.69537, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Characters/king/StaticBody"]
+transform = Transform( 2.99977, -0.0249692, -3.5722e-006, 0.0374539, 1.99981, 0.000572078, -0.00010711, -0.0114416, 0.0999984, -0.0573349, 1.44766, 0.194014 )
+shape = SubResource( 18 )
+
+[node name="MeshInstance" type="MeshInstance" parent="Characters/king/StaticBody/CollisionShape"]
+transform = Transform( -0.977378, 0.0229836, 0.00695556, 0.0444279, 0.999213, -0.00131781, -6.28235, -0.391592, -0.97763, -0.00248432, -0.298621, -0.0341492 )
+mesh = SubResource( 20 )
+material/0 = SubResource( 21 )

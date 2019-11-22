@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/Models/Player/Sword.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Assets/Models/Player/LInkedInked7b314ccbba528a0fc578be5f815b518a_LI.jpg" type="Texture" id=2]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.581245, 0.678403, 0.161616 )
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_texture = ExtResource( 2 )
+
+[sub_resource type="Animation" id=3]
+resource_name = "Slash"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.196182 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 0, 60 ) ]
+}
+
+[node name="Sword" type="Area"]
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.188047, 0.592931, -0.112267 )
+shape = SubResource( 1 )
+
+[node name="Spatial" type="Spatial" parent="."]
+
+[node name="MeshInstance" type="MeshInstance" parent="Spatial"]
+mesh = ExtResource( 1 )
+material/0 = SubResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Slash = SubResource( 3 )
