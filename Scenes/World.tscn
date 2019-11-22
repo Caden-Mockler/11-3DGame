@@ -1,4 +1,4 @@
-[gd_scene load_steps=66 format=2]
+[gd_scene load_steps=73 format=2]
 
 [ext_resource path="res://Scenes/World.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Models/Forest/More/Models/OBJ format/ground_dirt.obj" type="ArrayMesh" id=2]
@@ -36,14 +36,18 @@
 [ext_resource path="res://Tree3.tscn" type="PackedScene" id=34]
 [ext_resource path="res://Assets/Models/Forest/More/Models/OBJ format/stone_obelisk.obj" type="ArrayMesh" id=35]
 [ext_resource path="res://Assets/Models/Forest/More/Models/OBJ format/tent_detailedOpen.obj" type="ArrayMesh" id=36]
-[ext_resource path="res://Scenes/Potion.tscn" type="PackedScene" id=37]
-[ext_resource path="res://CoinBag.tscn" type="PackedScene" id=38]
-[ext_resource path="res://Assets/Models/Forest/More/Models/OBJ format/logs_stackLarge.obj" type="ArrayMesh" id=39]
-[ext_resource path="res://Assets/Models/Forest/More/Models/OBJ format/logs_stack.obj" type="ArrayMesh" id=40]
-[ext_resource path="res://Assets/Models/Village/Castle/Models/king.obj" type="ArrayMesh" id=41]
-[ext_resource path="res://Assets/Hero (3)-page-001.jpg" type="Texture" id=42]
-[ext_resource path="res://Assets/Models/Village/Castle/Models/knightBlue.obj" type="ArrayMesh" id=43]
-[ext_resource path="res://Beholder.tscn" type="PackedScene" id=44]
+[ext_resource path="res://Assets/Models/Forest/More/Models/OBJ format/logs_stackLarge.obj" type="ArrayMesh" id=37]
+[ext_resource path="res://Assets/Models/Forest/More/Models/OBJ format/logs_stack.obj" type="ArrayMesh" id=38]
+[ext_resource path="res://Assets/Models/Village/Castle/Models/king.obj" type="ArrayMesh" id=39]
+[ext_resource path="res://Assets/Hero (3)-page-001.jpg" type="Texture" id=40]
+[ext_resource path="res://Assets/Models/Village/Castle/Models/knightBlue.obj" type="ArrayMesh" id=41]
+[ext_resource path="res://Bard.tscn" type="PackedScene" id=42]
+[ext_resource path="res://Dude.tscn" type="PackedScene" id=43]
+[ext_resource path="res://Lady.tscn" type="PackedScene" id=44]
+[ext_resource path="res://Beholder.tscn" type="PackedScene" id=45]
+[ext_resource path="res://Orc.tscn" type="PackedScene" id=46]
+[ext_resource path="res://Golem.tscn" type="PackedScene" id=47]
+[ext_resource path="res://CoinBag.tscn" type="PackedScene" id=48]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_color = Color( 0.286275, 0.313726, 0.341176, 1 )
@@ -110,7 +114,94 @@ size = Vector3( 3, 3, 3 )
 
 [sub_resource type="SpatialMaterial" id=21]
 flags_transparent = true
-albedo_texture = ExtResource( 42 )
+albedo_texture = ExtResource( 40 )
+
+[sub_resource type="Animation" id=22]
+resource_name = "B1Move"
+length = 6.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.5, 3, 4.5, 6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 91.3759, 0.700764, 10.3983 ), Vector3( 83.3587, 0.700764, 50.1914 ), Vector3( 110.86, 0.700764, 50.1914 ), Vector3( 110.86, 0.700764, 10.3964 ), Vector3( 89.4042, 0.700764, 10.3964 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1.5, 3, 4.5, 6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, -125.946, 0 ), Vector3( 0, -30.7178, 0 ), Vector3( 0, 129.743, 0 ), Vector3( 0, 164.523, 0 ), Vector3( 0, -137.491, 0 ) ]
+}
+
+[sub_resource type="Animation" id=23]
+resource_name = "OrcPath"
+length = 9.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2, 3, 4, 4.9, 6, 7, 8, 9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 59.708, 0, -47.6332 ), Vector3( 90.0067, 0, -47.6332 ), Vector3( 96.851, 0, -57.7175 ), Vector3( 111.095, 0, -46.5259 ), Vector3( 109.871, 0, -65.1038 ), Vector3( 84.6063, 0, -71.1072 ), Vector3( 64.6798, 0, -63.5381 ), Vector3( 59.53, 0, -48.599 ), Vector3( 63.8423, 0, -46.3259 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 2, 3, 4, 4.9, 6, 7, 8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 157.078, 0 ), Vector3( 0, 147.273, 0 ), Vector3( 0, 17.5164, 0 ), Vector3( 0, -139.771, 0 ), Vector3( 0, -66.2726, 0 ), Vector3( 0, -16.5693, 0 ), Vector3( 0, 105.441, 0 ) ]
+}
+
+[sub_resource type="Animation" id=24]
+resource_name = "GolemPath"
+length = 12.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.5, 2.5, 3.5, 5, 6, 8, 9, 12 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 158.817, 0.395412, 0 ), Vector3( 136.43, 0.395412, -22.5916 ), Vector3( 141.554, 0.395412, -39.2446 ), Vector3( 116.84, 0.395412, -52.9039 ), Vector3( 92.224, 0.395412, -52.9039 ), Vector3( 85.251, 0.395412, -33.2188 ), Vector3( 105.777, 0.395412, -17.818 ), Vector3( 105.777, 0.395412, -3.96818 ), Vector3( 158.522, 0.395412, -3.96818 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1.5, 2.5, 3.5, 5, 6, 8, 9, 12 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, -151.232, 0 ), Vector3( 0, 133.518, 0 ), Vector3( 0, -167.613, 0 ), Vector3( 0, -116.069, 0 ), Vector3( 0, -13.8691, 0 ), Vector3( 0, 44.6546, 0 ), Vector3( 0, -12.537, 0 ), Vector3( 0, 50.2621, 0 ), Vector3( 0, -156.741, 0 ) ]
+}
 
 [node name="World" type="Spatial"]
 script = ExtResource( 1 )
@@ -635,7 +726,6 @@ mesh = SubResource( 10 )
 material/0 = SubResource( 11 )
 
 [node name="Campfire_01" type="MeshInstance" parent="Wild"]
-editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 127.259, -0.148211, 47.0381 )
 mesh = ExtResource( 23 )
 material/0 = null
@@ -651,7 +741,7 @@ material/9 = null
 material/10 = null
 
 [node name="Fallen_Trunk_01" type="MeshInstance" parent="Wild/Campfire_01"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.690277, -0.346122, -1.95154 )
+transform = Transform( 1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -0.690277, 0.0456795, -1.95154 )
 mesh = ExtResource( 24 )
 material/0 = null
 material/1 = null
@@ -757,13 +847,14 @@ material/10 = null
 material/11 = null
 
 [node name="StaticBody" type="StaticBody" parent="Wild"]
+editor/display_folded = true
 
 [node name="CollisionShape" type="CollisionShape" parent="Wild/StaticBody"]
 transform = Transform( 0.851801, 0, -0.523866, 0, 1, 0, 0.523866, 0, 0.851801, 119.547, 0, 40.2779 )
 shape = SubResource( 12 )
 
 [node name="CollisionShape2" type="CollisionShape" parent="Wild/StaticBody"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 127.892, 0, 44.6189 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 127.892, -0.169045, 44.6189 )
 shape = SubResource( 13 )
 
 [node name="CollisionShape3" type="CollisionShape" parent="Wild/StaticBody"]
@@ -784,14 +875,15 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40.9928, -0.447193, 85.7069 )
 transform = Transform( 0.863554, 0, -0.504257, 0, 1, 0, 0.504257, 0, 0.863554, 98.8048, 0.669479, -73.4335 )
 
 [node name="stone_obelisk" type="MeshInstance" parent="Wild"]
-transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, 105.024, -0.602698, -34.2546 )
+editor/display_folded = true
+transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, 105.024, -1.85284, -34.2546 )
 mesh = ExtResource( 35 )
 material/0 = null
 
 [node name="StaticBody" type="StaticBody" parent="Wild/stone_obelisk"]
 
 [node name="CollisionShape" type="CollisionShape" parent="Wild/stone_obelisk/StaticBody"]
-transform = Transform( 1.25, 0, 0, 0, 5, 0, 0, 0, 1.25, 0.249634, 2.22338, -0.42748 )
+transform = Transform( 1.25, 0, 0, 0, 5, 0, 0, 0, 1.25, -0.33065, 2.22338, -0.42748 )
 shape = SubResource( 16 )
 
 [node name="tent_detailedOpen" type="MeshInstance" parent="Wild"]
@@ -801,21 +893,16 @@ material/0 = null
 material/1 = null
 material/2 = null
 
-[node name="Potion" parent="." instance=ExtResource( 37 )]
-
-[node name="CoinBag" parent="." instance=ExtResource( 38 )]
-transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -10.4027, 0.914571, -4.34072 )
-
 [node name="logs_stackLarge" type="MeshInstance" parent="."]
 editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.7861, -0.443772, -34.0688 )
-mesh = ExtResource( 39 )
+mesh = ExtResource( 37 )
 material/0 = null
 material/1 = null
 
 [node name="logs_stack" type="MeshInstance" parent="logs_stackLarge"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.465596, 3.57041, 0.111965 )
-mesh = ExtResource( 40 )
+mesh = ExtResource( 38 )
 material/0 = null
 material/1 = null
 
@@ -828,13 +915,13 @@ shape = SubResource( 17 )
 [node name="logs_stackLarge2" type="MeshInstance" parent="logs_stackLarge"]
 editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09222, 0, 0 )
-mesh = ExtResource( 39 )
+mesh = ExtResource( 37 )
 material/0 = null
 material/1 = null
 
 [node name="logs_stack" type="MeshInstance" parent="logs_stackLarge/logs_stackLarge2"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.465596, 3.57041, 0.111965 )
-mesh = ExtResource( 40 )
+mesh = ExtResource( 38 )
 material/0 = null
 material/1 = null
 
@@ -843,8 +930,9 @@ material/1 = null
 [node name="NPC" type="Spatial" parent="Characters"]
 
 [node name="king" type="MeshInstance" parent="Characters/NPC"]
+editor/display_folded = true
 transform = Transform( -0.454551, 0, -0.208287, 0, 0.5, 0, 0.208287, 0, -0.454551, -19.7054, 0.149673, -1.69053 )
-mesh = ExtResource( 41 )
+mesh = ExtResource( 39 )
 material/0 = null
 material/1 = null
 material/2 = null
@@ -865,7 +953,7 @@ material/0 = SubResource( 21 )
 
 [node name="knightBlue" type="MeshInstance" parent="Characters/NPC"]
 transform = Transform( -0.454551, 0, -0.208287, 0, 0.75, 0, 0.208287, 0, -0.454551, -23.5385, -0.139693, -2.09734 )
-mesh = ExtResource( 43 )
+mesh = ExtResource( 41 )
 material/0 = null
 material/1 = null
 material/2 = null
@@ -874,14 +962,88 @@ material/4 = null
 
 [node name="knightBlue2" type="MeshInstance" parent="Characters/NPC"]
 transform = Transform( -0.499562, 0, 0.0209155, 0, 0.75, 0, -0.0209155, 0, -0.499562, -16.2267, -0.139693, -4.41123 )
-mesh = ExtResource( 43 )
+mesh = ExtResource( 41 )
 material/0 = null
 material/1 = null
 material/2 = null
 material/3 = null
 material/4 = null
 
-[node name="Monster" type="Spatial" parent="Characters"]
+[node name="Bard" parent="Characters/NPC" instance=ExtResource( 42 )]
+transform = Transform( 1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 69.4291, 0.909675, -100.365 )
 
-[node name="Beholder Scene" parent="Characters/Monster" instance=ExtResource( 44 )]
-transform = Transform( 0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 91.3759, 0.700764, 10.3983 )
+[node name="Dude" parent="Characters/NPC" instance=ExtResource( 43 )]
+transform = Transform( -1.49996, 0, -0.0106861, 0, 1.5, 0, 0.0106861, 0, -1.49996, 126.566, 0.932183, 45.8803 )
+
+[node name="Lady" parent="Characters/NPC" instance=ExtResource( 44 )]
+transform = Transform( 0.625365, 0, 0.780332, 0, 1, 0, -0.780332, 0, 0.625365, 109.061, -0.176436, -34.1213 )
+
+[node name="Monster" type="Spatial" parent="Characters"]
+editor/display_folded = true
+
+[node name="Beholder" parent="Characters/Monster" instance=ExtResource( 45 )]
+transform = Transform( -0.307058, 0, -0.515476, 0, 0.6, 0, 0.515476, 0, -0.307058, 90.9411, 0.700764, 12.5566 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Characters/Monster/Beholder"]
+autoplay = "B1Move"
+anims/B1Move = SubResource( 22 )
+
+[node name="Orc" parent="Characters/Monster" instance=ExtResource( 46 )]
+transform = Transform( 0.944571, 0, 0.328307, 0, 1, 0, -0.328307, 0, 0.944571, 110.914, 0, -46.6681 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Characters/Monster/Orc"]
+autoplay = "OrcPath"
+anims/OrcPath = SubResource( 23 )
+
+[node name="Golem" parent="Characters/Monster" instance=ExtResource( 47 )]
+transform = Transform( 0.530656, 0, -0.847587, 0, 1, 0, 0.847587, 0, 0.530656, 151.483, 0.395412, -7.4008 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Characters/Monster/Golem"]
+autoplay = "GolemPath"
+anims/GolemPath = SubResource( 24 )
+
+[node name="Gold" type="Spatial" parent="."]
+editor/display_folded = true
+
+[node name="CoinBag" parent="Gold" instance=ExtResource( 48 )]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -4.6622, 1.9497, -2.61621 )
+
+[node name="CoinBag2" parent="Gold" instance=ExtResource( 48 )]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 17.4367, -0.0221002, -39.3759 )
+
+[node name="CoinBag12" parent="Gold" instance=ExtResource( 48 )]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -10.5904, -0.0221002, -35.9932 )
+
+[node name="CoinBag3" parent="Gold" instance=ExtResource( 48 )]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 107.638, 0.486133, -84.5455 )
+
+[node name="CoinBag4" parent="Gold" instance=ExtResource( 48 )]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 128.991, 1.33455, -43.4431 )
+
+[node name="CoinBag5" parent="Gold" instance=ExtResource( 48 )]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 154.54, 0.105802, -9.53105 )
+
+[node name="CoinBag6" parent="Gold" instance=ExtResource( 48 )]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 129.989, 1.40815, 17.7865 )
+
+[node name="CoinBag7" parent="Gold" instance=ExtResource( 48 )]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 109.475, -0.22377, 60.5416 )
+
+[node name="CoinBag8" parent="Gold" instance=ExtResource( 48 )]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 83.1292, 0.712457, 76.9898 )
+
+[node name="CoinBag9" parent="Gold" instance=ExtResource( 48 )]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 61.5994, 3.37565, 82.1189 )
+
+[node name="CoinBag10" parent="Gold" instance=ExtResource( 48 )]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 25.4853, 0.0210669, 100.18 )
+
+[node name="CoinBag11" parent="Gold" instance=ExtResource( 48 )]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 48.7926, 0.0210669, 51.2473 )
+
+[node name="Control" type="Control" parent="."]
+margin_right = 1023.0
+margin_bottom = 595.0
+[connection signal="body_entered" from="Characters/Monster/Beholder" to="FPSCharacter" method="_on_Beholder_body_entered"]
+[connection signal="body_entered" from="Characters/Monster/Orc" to="FPSCharacter" method="_on_Orc_body_entered"]
+[connection signal="body_entered" from="Characters/Monster/Golem" to="FPSCharacter" method="_on_Golem_body_entered"]

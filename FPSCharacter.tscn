@@ -1,8 +1,7 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://FPSCharacter.gd" type="Script" id=1]
-[ext_resource path="res://Assets/Models/Player/wand.obj" type="ArrayMesh" id=2]
-[ext_resource path="res://Sword.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Sword.tscn" type="PackedScene" id=2]
 
 [sub_resource type="CapsuleShape" id=1]
 radius = 0.5
@@ -19,8 +18,6 @@ extents = Vector3( 0.3, 0.351261, 0.368072 )
 [sub_resource type="SphereMesh" id=5]
 radius = 0.5
 height = 1.0
-
-[sub_resource type="BoxShape" id=10]
 
 [node name="FPSCharacter" type="KinematicBody"]
 collision_layer = 2
@@ -58,18 +55,5 @@ transform = Transform( 1, 0, 0, 0, -4.37114e-008, -1, 0, 1, -4.37114e-008, 0, -0
 mesh = SubResource( 5 )
 material/0 = null
 
-[node name="wand" type="MeshInstance" parent="."]
-editor/display_folded = true
-transform = Transform( 0.0140774, 0.0225272, -0.0964072, 0.052026, 0.0811649, 0.0265624, 0.0842326, -0.0538961, -0.000294097, -0.641423, 0.962798, -0.780885 )
-mesh = ExtResource( 2 )
-material/0 = null
-material/1 = null
-
-[node name="StaticBody" type="StaticBody" parent="wand"]
-
-[node name="CollisionShape" type="CollisionShape" parent="wand/StaticBody"]
-transform = Transform( 2, 7.15256e-007, -2.12807e-007, -2.38419e-007, 5, -8.88249e-008, 4.94067e-007, 4.14439e-007, 1, -0.0881948, 5.1671, -0.0567932 )
-shape = SubResource( 10 )
-
-[node name="Sword" parent="." instance=ExtResource( 3 )]
+[node name="Sword" parent="." instance=ExtResource( 2 )]
 transform = Transform( 0.0219611, -0.00226266, -0.999756, 0.102488, 0.994734, 0, 0.994491, -0.102463, 0.0220773, 0.495733, 0.728951, -1.00107 )

@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/lady.obj-a6a779e61f7307f65dd7e018f984d8e8.mesh"
+
+[deps]
+
+files=[ "res://.import/lady.obj-a6a779e61f7307f65dd7e018f984d8e8.mesh" ]
+
+source_file="res://Assets/Models/People/Villagers/Lady/lady.obj"
+dest_files=[ "res://.import/lady.obj-a6a779e61f7307f65dd7e018f984d8e8.mesh", "res://.import/lady.obj-a6a779e61f7307f65dd7e018f984d8e8.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/dude.obj-f250c8c9eacf4e5875dd5bda46fc40d1.mesh"
+
+[deps]
+
+files=[ "res://.import/dude.obj-f250c8c9eacf4e5875dd5bda46fc40d1.mesh" ]
+
+source_file="res://Assets/Models/People/Villagers/Dude/dude.obj"
+dest_files=[ "res://.import/dude.obj-f250c8c9eacf4e5875dd5bda46fc40d1.mesh", "res://.import/dude.obj-f250c8c9eacf4e5875dd5bda46fc40d1.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

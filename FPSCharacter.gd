@@ -44,3 +44,15 @@ func _physics_process(delta):
 	velocity - move_and_slide(velocity, Vector3.UP, true)
 	if jump and is_on_floor():
 		velocity.y = jump_speed
+
+func _on_Beholder_body_entered(body):
+	if body.name == "FPSCharacter":
+		get_tree().change_scene("res://End.tscn")
+
+func _on_Golem_body_entered(body):
+	if body.name == "FPSCharacter":
+		get_tree().change_scene("res://End.tscn")
+		
+func _on_Orc_body_entered(body):
+	if body.name == "FPSCharacter":
+		get_tree().change_scene("res://End.tscn")
