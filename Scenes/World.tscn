@@ -1,4 +1,4 @@
-[gd_scene load_steps=65 format=2]
+[gd_scene load_steps=66 format=2]
 
 [ext_resource path="res://Scenes/World.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Models/Forest/More/Models/OBJ format/ground_dirt.obj" type="ArrayMesh" id=2]
@@ -40,9 +40,10 @@
 [ext_resource path="res://CoinBag.tscn" type="PackedScene" id=38]
 [ext_resource path="res://Assets/Models/Forest/More/Models/OBJ format/logs_stackLarge.obj" type="ArrayMesh" id=39]
 [ext_resource path="res://Assets/Models/Forest/More/Models/OBJ format/logs_stack.obj" type="ArrayMesh" id=40]
-[ext_resource path="res://Assets/Models/Village/Castle/Models/knightBlue.obj" type="ArrayMesh" id=41]
-[ext_resource path="res://Assets/Models/Village/Castle/Models/king.obj" type="ArrayMesh" id=42]
-[ext_resource path="res://Assets/Hero (3)-page-001.jpg" type="Texture" id=43]
+[ext_resource path="res://Assets/Models/Village/Castle/Models/king.obj" type="ArrayMesh" id=41]
+[ext_resource path="res://Assets/Hero (3)-page-001.jpg" type="Texture" id=42]
+[ext_resource path="res://Assets/Models/Village/Castle/Models/knightBlue.obj" type="ArrayMesh" id=43]
+[ext_resource path="res://Beholder.tscn" type="PackedScene" id=44]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_color = Color( 0.286275, 0.313726, 0.341176, 1 )
@@ -109,7 +110,7 @@ size = Vector3( 3, 3, 3 )
 
 [sub_resource type="SpatialMaterial" id=21]
 flags_transparent = true
-albedo_texture = ExtResource( 43 )
+albedo_texture = ExtResource( 42 )
 
 [node name="World" type="Spatial"]
 script = ExtResource( 1 )
@@ -498,6 +499,7 @@ transform = Transform( 0.0952451, 0, -0.995454, 0, 1, 0, 0.995454, 0, 0.0952451,
 shape = SubResource( 6 )
 
 [node name="Boundry" type="Spatial" parent="."]
+editor/display_folded = true
 
 [node name="StaticBody" type="StaticBody" parent="Boundry"]
 editor/display_folded = true
@@ -838,41 +840,48 @@ material/1 = null
 
 [node name="Characters" type="Spatial" parent="."]
 
-[node name="knightBlue" type="MeshInstance" parent="Characters"]
-transform = Transform( -0.454551, 0, -0.208287, 0, 0.75, 0, 0.208287, 0, -0.454551, -23.5385, -0.139693, -2.09734 )
-mesh = ExtResource( 41 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
+[node name="NPC" type="Spatial" parent="Characters"]
 
-[node name="knightBlue2" type="MeshInstance" parent="Characters"]
-transform = Transform( -0.499562, 0, 0.0209155, 0, 0.75, 0, -0.0209155, 0, -0.499562, -16.2267, -0.139693, -4.41123 )
-mesh = ExtResource( 41 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="king" type="MeshInstance" parent="Characters"]
+[node name="king" type="MeshInstance" parent="Characters/NPC"]
 transform = Transform( -0.454551, 0, -0.208287, 0, 0.5, 0, 0.208287, 0, -0.454551, -19.7054, 0.149673, -1.69053 )
-mesh = ExtResource( 42 )
+mesh = ExtResource( 41 )
 material/0 = null
 material/1 = null
 material/2 = null
 material/3 = null
 material/4 = null
 
-[node name="StaticBody" type="StaticBody" parent="Characters/king"]
+[node name="StaticBody" type="StaticBody" parent="Characters/NPC/king"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.69537, 0 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Characters/king/StaticBody"]
+[node name="CollisionShape" type="CollisionShape" parent="Characters/NPC/king/StaticBody"]
 transform = Transform( 2.99977, -0.0249692, -3.5722e-006, 0.0374539, 1.99981, 0.000572078, -0.00010711, -0.0114416, 0.0999984, -0.0573349, 1.44766, 0.194014 )
 shape = SubResource( 18 )
 
-[node name="MeshInstance" type="MeshInstance" parent="Characters/king/StaticBody/CollisionShape"]
+[node name="MeshInstance" type="MeshInstance" parent="Characters/NPC/king/StaticBody/CollisionShape"]
 transform = Transform( -0.977378, 0.0229836, 0.00695556, 0.0444279, 0.999213, -0.00131781, -6.28235, -0.391592, -0.97763, -0.00248432, -0.298621, -0.0341492 )
 mesh = SubResource( 20 )
 material/0 = SubResource( 21 )
+
+[node name="knightBlue" type="MeshInstance" parent="Characters/NPC"]
+transform = Transform( -0.454551, 0, -0.208287, 0, 0.75, 0, 0.208287, 0, -0.454551, -23.5385, -0.139693, -2.09734 )
+mesh = ExtResource( 43 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="knightBlue2" type="MeshInstance" parent="Characters/NPC"]
+transform = Transform( -0.499562, 0, 0.0209155, 0, 0.75, 0, -0.0209155, 0, -0.499562, -16.2267, -0.139693, -4.41123 )
+mesh = ExtResource( 43 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Monster" type="Spatial" parent="Characters"]
+
+[node name="Beholder Scene" parent="Characters/Monster" instance=ExtResource( 44 )]
+transform = Transform( 0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 91.3759, 0.700764, 10.3983 )
